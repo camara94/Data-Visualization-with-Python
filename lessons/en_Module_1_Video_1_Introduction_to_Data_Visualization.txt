@@ -1,0 +1,52 @@
+Hello everyone and welcome to the first module of the data visualization with
+Python course. In this video, we're gonna introduce data visualization and go over
+an example of transforming a given visual into one which is more effective
+attractive and impactive. So let's get started. Now one might ask why would I
+need to learn how to visualize data. Well data visualization is a way to show a
+complex data in a form that is graphical and easy to understand. This can be
+especially useful when one is trying to explore the data and getting acquainted
+with it. Also since a picture is worth a thousand words, then plots and graphs can
+be very effective in conveying a clear description of the data especially when
+disclosing findings to an audience or sharing the data with other peer data
+scientists. Also, they can be very valuable when it comes to supporting any
+recommendations you make to clients managers or other decision-makers in
+your field. Darkhorse Analytics is a company that spun out of a research lab
+at the University of Alberta in 2008 and has done fascinating work on data
+visualization. Darkhorse Analytics specializes in quantitative consulting
+in several areas including data visualization and geo spatial analysis.
+Their approach when creating a visual revolves around three key points: less is
+more effective, it is more attractive, and it is more impactive. In other words, any
+feature or design you incorporate in your plot to make it more attractive or
+pleasing should support the message that the plot is meant to get across and not
+distract from it. Let's take a look at an example. So here is a pie chart of what
+looks like people's preferences when it comes to different types of pig meat. The
+charts message is almost half of the people surveyed preferred bacon over the
+other types of pig meat. But I'm sure that almost all of you agree that there
+is a lot going on in this pie chart and we're not even sure it features such as
+the blue background or 3d orientation are meant to convey
+anything. In fact, these additional unnecessary features distract from the
+main message and can be confusing to the audience. So let's apply Darkhorse
+Analytics approach to transform this into a visual that's more effective,
+attractive, and impactive. As I mentioned earlier, the message here is that people
+are most likely to choose bacon over other types of pig meat, so let's get rid
+of everything that can be distracting from this core message. The first thing
+is let's get rid of the blue background and the gray background. Let's also get
+rid of borders as they do not convey any extra information. Also let's drop the
+redundant legend since the pie chart is already color coded. 3D isn't adding any
+extra information so let's say bye to it. Text bolding is also unnecessary and
+let's get rid of the different colors and the wedges. Wow! What just happened?
+Well let's thicken the lines to make them more meaningful. Now this looks a
+little familiar. Yes! This is a bar graph after all, one with horizontal bars. And
+finally, let's emphasize bacon so that it stands out among the other types of pig
+meat. Now let's juxtapose the pie chart and the bar graph and compare which is
+better and easy to understand. I hope that we unanimously agree that the bar
+graph is the better of the two. It is simple, cleaner, less distracting, and much
+easier to read. In fact, pie charts have recently come under fire from data
+visualization experts who argue that they are relevant only in the rarest of
+circumstances. Bar graphs and charts on the other hand are argued to be far
+superior ways to quickly get a message across. But don't worry about this for
+now, we will come back to this point when we learn how to create pie charts and
+bar graphs with Matplotlib. For more similar and interesting
+examples, check out Darkhorse Analytics website. They have a couple more examples
+on how to clean bar graphs and maps of geospatial data. All these examples
+reinforce the concept of less is more effective, attractive, and impactive.
