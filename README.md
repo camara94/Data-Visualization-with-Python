@@ -102,3 +102,5 @@ magic function **%matplotlib inline**, the limitation of this backend is we can 
 ### Matplotlib - Backends - Notebook
 With a notebook backend in place, if a plt function is called, it checks if an active figure exists, and any functions you call will be applied to this active figure. If figure does not exist, it renders a news figure.
 ![notebook backend](images/notebookbackend.png)
+### Matplotlib - Pandas
+Pandas is also a built-in implementation of it. there, plotting in pandas is as simple as calling the plot function on a given pandas series or dataframe.
