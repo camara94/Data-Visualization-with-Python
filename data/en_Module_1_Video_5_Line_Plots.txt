@@ -1,0 +1,40 @@
+In this video, things will start getting more exciting. We will generate our first
+visualization tool: the line plot. So what is a line plot? As its name suggests, it
+is a plot in the form of a series of data points connected by straight line
+segments. It is one of the most basic type of chart and is common in many
+fields not just data science. The more important question is when to use line
+plots. The best use case for a line plot is when you have a continuous dataset
+and you're interested in visualizing the data over a period of time. As an
+example, say we're interested in the trend of immigrants from Haiti to Canada.
+We can generate a line plot and the resulting figure will depict the trend
+of Haitian immigrants to Canada from 1980 to 2013. Based on this line plot, we
+can then research for justifications of obvious anomalies or changes. So in this
+example, we see that there is a spike of immigration from Haiti to Canada in 2010.
+A quick Google search for major events in Haiti in 2010 would return the tragic
+earthquake that took place in 2010, and therefore this influx of immigration to
+Canada was mainly due to that tragic earthquake. Okay now how can we generate
+this line plot? Before we go over the code to do that, let's do a quick recap
+of our dataset. Each row represents a country and contains metadata about the
+country such as where it is located geographically, and whether it is
+developing or developed. Each row also contains numerical figures of annual
+immigration from that country to Canada from 1980 to 2013.
+Now let's process the dataframe so that the country name becomes the index of
+each row. This should make querying specific countries easier. Also let's add
+an extra column which represents the cumulative sum of annual immigration from
+each country from 1980 to 2013. So for Afghanistan, it is 58,639,
+total, and for Albania it is 15,699,
+and so on. And let's name our dataframe df_canada. So now
+that we know how our data is stored in the dataframe, df_canada,
+let's generate the line plot corresponding to immigration from Haiti.
+First, we import Matplotlib as mpl and its scripting interface as plt. Then,
+we call the plot function on the row corresponding to Haiti and we set kind
+equals line to generate a line plot. Note that we used years which is a list
+containing string format of years from 1980 to 2013 in order to exclude the
+column of total immigration that we added. Then to complete the figure, we
+give it a title and we label its axes. Finally we call the show function to
+display the figure. Note that this is the code to generate the line plot using the
+magic function % matplotlib with the inline backend. And there you have it: a
+line plot that depicts immigration from Haiti to Canada from 1980 to 2013.
+In the lab session, we explore line plots in more details so make sure to
+complete this module's lab session. This concludes our video on line plots. I'll
+see you in the next video.
