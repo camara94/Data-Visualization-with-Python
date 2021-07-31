@@ -137,3 +137,6 @@ In this lesson you will learn about:
 ![datasetrecap](images/datasetrecap.png)
 ### Dataset - Processed
 ![datasetprocessed](images/dataprocessed.png)
+### Generating Area Plots
+![generatingareaplot](images/generatingareaplot.png)
+![generatingareaplot](images/areaplot2.png)
