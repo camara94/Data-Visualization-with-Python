@@ -60,3 +60,5 @@ In this lesson you will learn about:
 ![reduce colr](images/reducecolr.png)
 ### Example - Remove Wedges
 ![remove wedges](images/removewidget.png)
+### Example - Thicken Lines
+![thicken lines](images/tickenline.png)
