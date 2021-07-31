@@ -174,3 +174,4 @@ In this lesson you will learn about:
 ![dataset](images/dataprocessed.png)
 ### Pie Chart 
 ![df_continent](images/dfcontinents.png)
+![piechar](images/piechart2.png)
