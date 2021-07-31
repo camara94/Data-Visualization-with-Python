@@ -85,4 +85,4 @@ In this lesson you will learn about:
 ![scriptinglayer](images/scrptinglayer.png)
 ### Further Reading
 ![further](images/furtherreading.png)
-[https://aosabook.org/en/matplotlib.html](https://aosabook.org/en/matplotlib.htm
+[https://aosabook.org/en/matplotlib.html](https://aosabook.org/en/matplotlib.htm)
