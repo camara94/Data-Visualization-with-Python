@@ -111,3 +111,5 @@ Pandas is also a built-in implementation of it. there, plotting in pandas is as 
 ### Dataset on Immigration to Canada
 #### Dataset
 ![dataset](images/dataset.png)
+#### Immigration Data to Canada
+![immigration data to canada](images/immigrationdatatocanada.png)
