@@ -1,0 +1,152 @@
+0
+00:00:01,210 --> 00:00:07,069
+In this video, we will learn about an additional visualization tool, namely the
+
+1
+00:00:07,069 --> 00:00:13,160
+bar chart, and learn how to create it using Matplotlib. A bar chart is a very
+
+2
+00:00:13,160 --> 00:00:18,740
+popular visualization tool. Unlike a histogram, a bar chart also known as a
+
+3
+00:00:18,740 --> 00:00:23,720
+bar graph is a type of plot where the length of each bar is proportional to
+
+4
+00:00:23,720 --> 00:00:28,519
+the value of the item that it represents. It is commonly used to compare the
+
+5
+00:00:28,519 --> 00:00:34,129
+values of a variable at a given point in time. For example, say we're interested in
+
+6
+00:00:34,129 --> 00:00:38,750
+visualizing in a discrete fashion how immigration from Iceland to Canada
+
+7
+00:00:38,750 --> 00:00:44,750
+looked like from 1980 to 2013. One way to do that is by building a bar chart where
+
+8
+00:00:44,750 --> 00:00:49,070
+the height of the bar represents the total immigration from Iceland to Canada
+
+9
+00:00:49,070 --> 00:00:55,039
+in a particular year. So how do we do that with Matplotlib. Before we go over
+
+10
+00:00:55,039 --> 00:01:00,499
+the code to do that, let's do a quick recap of our dataset. Recall that each
+
+11
+00:01:00,499 --> 00:01:06,590
+row represents a country and contains metadata about the country such as where
+
+12
+00:01:06,590 --> 00:01:12,020
+it is located geographically and whether it is developing or developed. Each row
+
+13
+00:01:12,020 --> 00:01:16,729
+also contains numerical figures of annual immigration from that country to
+
+14
+00:01:16,729 --> 00:01:21,189
+Canada from 1980 to 2013.
+
+15
+00:01:21,909 --> 00:01:27,200
+Now let's process the dataframe so that the country name becomes the index of
+
+16
+00:01:27,200 --> 00:01:31,969
+each row. This should make retrieving rows pertaining to specific countries a
+
+17
+00:01:31,969 --> 00:01:37,610
+lot easier. Also let's add an extra column which represents the cumulative
+
+18
+00:01:37,610 --> 00:01:42,939
+sum of annual immigration from each country from 1980 to 2013.
+
+19
+00:01:42,939 --> 00:01:52,240
+So for Afghanistan for example, it is 58,639, total, and for Albania it is
+
+20
+00:01:52,240 --> 00:02:01,579
+15,699 and so on. And let's name our dataframe, df_canada. So now
+
+21
+00:02:01,579 --> 00:02:05,840
+that we know how our data is stored in the dataframe, df_canada,
+
+22
+00:02:05,840 --> 00:02:11,390
+let's see how we can use Matplotlib to generate a bar chart to visualize how
+
+23
+00:02:11,390 --> 00:02:14,480
+immigration from Iceland to Canada looked like from
+
+24
+00:02:14,480 --> 00:02:20,830
+1980 to 2013. As usual, we start by importing Matplotlib and its scripting interface.
+
+25
+00:02:20,830 --> 00:02:26,390
+Then we use the years variable to create a new dataframe; let's name it
+
+26
+00:02:26,390 --> 00:02:31,280
+df_iceland, which includes the data pertaining to annual immigration
+
+27
+00:02:31,280 --> 00:02:37,099
+from Iceland to Canada and excluding the total column. Then we call the plot
+
+28
+00:02:37,099 --> 00:02:42,560
+function on df_iceland and we set kind equals bar to generate a bar
+
+29
+00:02:42,560 --> 00:02:48,610
+chart. Then to complete the figure we give it a title and we label its axes.
+
+30
+00:02:48,610 --> 00:02:53,780
+Finally, we call the show function to display the figure. And there you have it.
+
+31
+00:02:53,780 --> 00:02:59,650
+A bar chart that depicts the immigration from Iceland to Canada from 1980 to 2013.
+
+32
+00:02:59,650 --> 00:03:04,489
+By examining the bar chart we notice that immigration to Canada from Iceland
+
+33
+00:03:04,489 --> 00:03:10,579
+has seen an increasing trend since 2010. I'm sure that the curious among you are
+
+34
+00:03:10,579 --> 00:03:15,319
+already wondering who the culprit behind this increasing trend is. In the lab
+
+35
+00:03:15,319 --> 00:03:19,669
+session, we reveal the reason and we also learn how to create a bar chart
+
+36
+00:03:19,669 --> 00:03:24,400
+with horizontal bars, so make sure to complete this module's lab session. And
+
+37
+00:03:24,400 --> 00:03:31,930
+with this, we conclude our video on bar charts. I'll see you in the next video.
+
