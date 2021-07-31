@@ -64,3 +64,5 @@ In this lesson you will learn about:
 ![thicken lines](images/tickenline.png)
 ### Example - Emphasize Bacon
 ![emphasizebacon](images/emphasizebacon.png)
+### Comparaison
+![comparaison](images/comparaison.png)
