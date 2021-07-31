@@ -150,3 +150,5 @@ In this lesson you will learn about:
 ![processed](images/processed.png)
 ### Histograms
 ![hist](images/histograms.png)
+### Numpy - Histograms
+![nphist](images/nphistogram.png)
