@@ -81,4 +81,5 @@ In this lesson you will learn about:
 ### Putting the Artist Layer to Use
 ![putting artist](images/puttingartistlayertouse.png)
 ![figure](images/figartist.png)
-
+### Scripting Layer
+![scriptinglayer](images/scrptinglayer.png)
