@@ -78,3 +78,7 @@ In this lesson you will learn about:
 ![backend layer](images/backendlayer.png)
 ### Artist Layer
 ![artist layer](images/artistlayer.png)
+### Putting the Artist Layer to Use
+![putting artist](images/puttingartistlayertouse.png)
+![figure](images/figartist.png)
+
