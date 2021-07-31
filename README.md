@@ -86,3 +86,7 @@ In this lesson you will learn about:
 ### Further Reading
 ![further](images/furtherreading.png)
 [https://aosabook.org/en/matplotlib.html](https://aosabook.org/en/matplotlib.htm)
+### Basic Plotting with Matplotlib
+### Matplotlib - Jupyter Notebook
+Jupyter notebook is open source web application that allows you to create and share documents that contain live code visualizations and some explonatory text as well. Jupyter has some specialized support for Matplotlib
+![import matplotlib](images/importmatplotlib.png)
