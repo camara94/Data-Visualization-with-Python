@@ -152,3 +152,5 @@ In this lesson you will learn about:
 ![hist](images/histograms.png)
 ### Numpy - Histograms
 ![nphist](images/nphistogram.png)
+### Bar Charts
+![barchart](images/barchart.png)
