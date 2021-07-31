@@ -142,3 +142,5 @@ In this lesson you will learn about:
 ![generatingareaplot](images/areaplot2.png)
 ### Area Plots
 ![generatingareaplot](images/areaplotfig.png)
+### Histograms
+![hist](images/histogramm.png)
