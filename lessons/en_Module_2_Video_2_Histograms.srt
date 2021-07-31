@@ -1,0 +1,216 @@
+0
+00:00:00,970 --> 00:00:06,740
+In this video, we will learn about another visualization tool: the histogram,
+
+1
+00:00:06,740 --> 00:00:13,549
+and we will learn how to create it using Matplotlib. Let's start by defining what
+
+2
+00:00:13,549 --> 00:00:18,590
+a histogram is. A histogram is a way of representing the frequency distribution
+
+3
+00:00:18,590 --> 00:00:23,900
+of a numeric dataset. The way it works is it partitions the spread of the
+
+4
+00:00:23,900 --> 00:00:30,259
+numeric data into bins, assigns each datapoint in the dataset to a bin, and then
+
+5
+00:00:30,259 --> 00:00:34,730
+counts the number of datapoints that have been assigned to each bin. So the
+
+6
+00:00:34,730 --> 00:00:39,760
+vertical axis is actually the frequency or the number of datapoints in each bin.
+
+7
+00:00:39,760 --> 00:00:46,130
+For example, let's say the range of the numeric values in the dataset is 34,129.
+
+8
+00:00:46,130 --> 00:00:52,430
+Now, the first step in creating the histogram is partitioning
+
+9
+00:00:52,430 --> 00:00:57,770
+the horizontal axis in, say, ten bins of equal width and then we construct the
+
+10
+00:00:57,770 --> 00:01:02,450
+histogram by counting how many datapoints have a value that is between the
+
+11
+00:01:02,450 --> 00:01:08,210
+limits of the first bin, the second bin, the third bin, and so on. Say the number
+
+12
+00:01:08,210 --> 00:01:17,840
+of datapoints having a value between 0 and 3,413 is 175, then we draw a bar of
+
+13
+00:01:17,840 --> 00:01:23,869
+that height for this bin. We repeat the same thing for all the other bins, and if
+
+14
+00:01:23,869 --> 00:01:30,200
+no datapoints fall into a bin then that bin would have a bar of height 0. So how
+
+15
+00:01:30,200 --> 00:01:35,869
+do we create a histogram using Matplotlib. Before we go over the code to
+
+16
+00:01:35,869 --> 00:01:39,280
+do that, let's do a quick recap of our dataset.
+
+17
+00:01:39,280 --> 00:01:45,079
+Recall that each row represents a country and contains metadata about the
+
+18
+00:01:45,079 --> 00:01:49,369
+country such as where it is located geographically and whether it is
+
+19
+00:01:49,369 --> 00:01:55,280
+developing or developed. Each row also contains numerical figures of annual
+
+20
+00:01:55,280 --> 00:02:01,479
+immigration from that country to Canada from 1980 to 2013.
+
+21
+00:02:02,170 --> 00:02:07,459
+Now let's process the dataframe so that the country name becomes the index of
+
+22
+00:02:07,459 --> 00:02:12,260
+each row. This should make retrieving rows pertaining to specific countries a
+
+23
+00:02:12,260 --> 00:02:16,730
+lot easier. Also let's add an extra column which
+
+24
+00:02:16,730 --> 00:02:21,950
+represents the cumulative sum of annual immigration from each country from 1980
+
+25
+00:02:21,950 --> 00:02:28,430
+to 2013. So for Afghanistan for example, it is 58,639,
+
+26
+00:02:28,430 --> 00:02:34,380
+total, and for Albania it is 15,699,
+
+27
+00:02:34,380 --> 00:02:42,489
+and so on. And let's name our dataframe df_canada.
+
+28
+00:02:43,440 --> 00:02:48,880
+So now that we know how our data is stored in the dataframe df_canada,
+
+29
+00:02:48,880 --> 00:02:52,840
+say we're interested in visualizing the distribution of
+
+30
+00:02:52,840 --> 00:02:58,120
+immigrants to Canada in the year 2013. The simplest way to do that is to
+
+31
+00:02:58,120 --> 00:03:03,040
+generate a histogram of the data in column 2013 and let's see how we can do
+
+32
+00:03:03,040 --> 00:03:09,850
+that with Matplotlib. First, we import Matplotlib as mpl and its scripting
+
+33
+00:03:09,850 --> 00:03:15,640
+interface as plt. Then we call the plot function on the data in column 2013 and
+
+34
+00:03:15,640 --> 00:03:22,570
+we set kind equals hist to generate a histogram. Then to complete the figure, we
+
+35
+00:03:22,570 --> 00:03:28,360
+give it a title and we label its axes. Finally, we call the show function to
+
+36
+00:03:28,360 --> 00:03:33,010
+display the figure. And there you have it. A histogram that depicts the
+
+37
+00:03:33,010 --> 00:03:38,770
+distribution of immigration to Canada in 2013 but notice how the bins are not
+
+38
+00:03:38,770 --> 00:03:43,300
+aligned with the tick marks on the horizontal axis. This can make the
+
+39
+00:03:43,300 --> 00:03:48,160
+histogram hard to read. So let's try to fix this in order to make our histogram
+
+40
+00:03:48,160 --> 00:03:53,050
+more effective. One way to solve this issue is to borrow the histogram
+
+41
+00:03:53,050 --> 00:03:57,880
+function from the Numpy library. So as usual we start by importing
+
+42
+00:03:57,880 --> 00:04:02,740
+Matplotlib and its scripting interface, but this time we also import the Numpy
+
+43
+00:04:02,740 --> 00:04:08,590
+library. Then we call the Numpy histogram function on the data in column 2013. What
+
+44
+00:04:08,590 --> 00:04:12,580
+this function is gonna do is it is going to partition the spread of the data in
+
+45
+00:04:12,580 --> 00:04:18,250
+column 2013 into 10 bins of equal width, compute the number of datapoints that
+
+46
+00:04:18,250 --> 00:04:22,600
+fall in each bin, and then return this frequency of each bin which we're
+
+47
+00:04:22,600 --> 00:04:28,890
+calling count here and the bin edges which we're calling bin_edges.
+
+48
+00:04:28,890 --> 00:04:34,300
+We then pass these bin edges as an additional parameter in our plot
+
+49
+00:04:34,300 --> 00:04:40,360
+function to generate the histogram. And there you go a nice looking histogram
+
+50
+00:04:40,360 --> 00:04:46,330
+whose bin edges are aligned with the tick marks on the horizontal axis. In the
+
+51
+00:04:46,330 --> 00:04:50,890
+lab session we explore histograms in more details, so make sure to complete
+
+52
+00:04:50,890 --> 00:04:56,320
+this module's lab session. And with this we conclude our video on histograms.
+
+53
+00:04:56,320 --> 00:04:59,940
+I'll see you in the next video.
+
