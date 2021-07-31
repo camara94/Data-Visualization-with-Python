@@ -104,3 +104,5 @@ With a notebook backend in place, if a plt function is called, it checks if an a
 ![notebook backend](images/notebookbackend.png)
 ### Matplotlib - Pandas
 Pandas is also a built-in implementation of it. there, plotting in pandas is as simple as calling the plot function on a given pandas series or dataframe.
+#### Matplotlib - Pandas - Line
+![pandas built-in](images/pandasplot.png)
