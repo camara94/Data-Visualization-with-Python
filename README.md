@@ -52,3 +52,5 @@ In this lesson you will learn about:
 ![example remove bg](images/exampleremoveborder.png)
 ### Example - Remove Redundant Legend
 ![example remove bg](images/exampleremoveredundantlegend.png)
+### Example - Remove 3D
+![example remove bg](images/exampleremove3d.png)
