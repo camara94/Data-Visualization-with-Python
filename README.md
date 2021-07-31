@@ -74,3 +74,6 @@ In this lesson you will learn about:
 ![mat](images/matplotlibhist.png)
 #### Matplotlib - Archictecture
 ![mat](images/matplotlibarch.png)
+### Backend Layer
+![backend layer](images/backendlayer.png)
+
