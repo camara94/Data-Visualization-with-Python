@@ -90,3 +90,9 @@ In this lesson you will learn about:
 ### Matplotlib - Jupyter Notebook
 Jupyter notebook is open source web application that allows you to create and share documents that contain live code visualizations and some explonatory text as well. Jupyter has some specialized support for Matplotlib
 ![import matplotlib](images/importmatplotlib.png)
+### Matplotlib - Plot Function
+In this cours, you can already create visuals tools such as:
+* histograms
+* bar charts
+* box plots
+* and any more using one function **Plot**
