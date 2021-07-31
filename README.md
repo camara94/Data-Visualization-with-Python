@@ -42,3 +42,5 @@ In this lesson you will learn about:
 ### Introduction to Data Visualization
 #### Why Build Visuals ?
 ![whybuild](images/whybuild.png)
+### Best Practices
+![bestpractice](images/bestpractices.png)
