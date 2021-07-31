@@ -144,3 +144,5 @@ In this lesson you will learn about:
 ![generatingareaplot](images/areaplotfig.png)
 ### Histograms
 ![hist](images/histogramm.png)
+### Dataset Recap
+![data](images/datasetrecap.png)
