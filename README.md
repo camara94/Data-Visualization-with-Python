@@ -166,3 +166,17 @@ In this lesson you will learn about:
 * Pie charts, and how to create them with Matplotlib.
 * Box plots, and how to create them with Matplotlib.  
 * Scatter plots and bubble plots, and how to create them with Matplotlib.
+### Pie Charts
+![piechart](images/piechart.png)
+### Dataset - Recap
+![data](images/datasetrecap.png)
+### Dataset - Processed
+![dataset](images/dataprocessed.png)
+### Pie Chart 
+![df_continent](images/dfcontinents.png)
+![piechar](images/piechart2.png)
+### Outcomes
+![outcomes](images/outcome.png)
+### Pie Charts Flows
+![piechartflows](images/piechartflows.png)
+[https://www.surveygizmo.com/survey-blog/pie-chart-or-bar-graph/](https://www.surveygizmo.com/survey-blog/pie-chart-or-bar-graph/)
