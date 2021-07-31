@@ -1,0 +1,276 @@
+0
+00:00:01,439 --> 00:00:07,140
+In this video, we will start learning about Matplotlib. This video will focus
+
+1
+00:00:07,140 --> 00:00:12,809
+on the history of Matplotlib and its architecture. Matplotlib is one of the
+
+2
+00:00:12,809 --> 00:00:18,539
+most widely used, if not the most popular data visualization library in Python. It
+
+3
+00:00:18,539 --> 00:00:23,580
+was created by John Hunter, who was a neurobiologist and was part of a
+
+4
+00:00:23,580 --> 00:00:27,599
+research team that was working on analyzing Electrocorticography
+
+5
+00:00:27,599 --> 00:00:33,750
+signals, ECoG for short. The team was using a proprietary software for the
+
+6
+00:00:33,750 --> 00:00:38,940
+analysis. However they had only one license and were taking turns in using
+
+7
+00:00:38,940 --> 00:00:43,860
+it. So in order to overcome this limitation, John set out to replace the
+
+8
+00:00:43,860 --> 00:00:48,870
+proprietary software with a MATLAB based version that could be utilized by him
+
+9
+00:00:48,870 --> 00:00:54,510
+and his teammates, and that could be extended by multiple investigators. As a
+
+10
+00:00:54,510 --> 00:01:00,840
+result, Matplotlib was originally developed as an ECoG visualization tool,
+
+11
+00:01:00,840 --> 00:01:06,690
+and just like MATLAB, Matplotlib was equipped with a scripting interface for
+
+12
+00:01:06,690 --> 00:01:11,730
+quick and easy generation of graphics, represented by pyplot. We will learn
+
+13
+00:01:11,730 --> 00:01:17,850
+more about this in a moment. Now Matplotlib's architecture is composed of
+
+14
+00:01:17,850 --> 00:01:24,000
+three main layers: the back-end layer, the artist layer where much of the heavy
+
+15
+00:01:24,000 --> 00:01:28,590
+lifting happens and is usually the appropriate programming paradigm when
+
+16
+00:01:28,590 --> 00:01:38,400
+writing a web application server, or a UI application, or perhaps a script to be shared with other developers, and the scripting layer, which is the appropriate
+
+17
+00:01:38,400 --> 00:01:42,750
+layer for everyday purposes and is considered a lighter scripting interface
+
+18
+00:01:42,750 --> 00:01:47,970
+to simplify common tasks and for a quick and easy generation of graphics and
+
+19
+00:01:47,970 --> 00:01:51,770
+plots. Now let's go into each layer in a little more details.
+
+20
+00:01:51,770 --> 00:01:58,200
+So the back-end layer has three built-in abstract interface classes: FigureCanvas,
+
+21
+00:01:58,200 --> 00:02:04,370
+which defines and encompasses the area on which the figure is drawn. Renderer, an
+
+22
+00:02:04,370 --> 00:02:10,380
+instance of the renderer class knows how to draw on the figure canvas. And finally,
+
+23
+00:02:10,380 --> 00:02:15,150
+Event, which handles user inputs such as keyboard strokes and
+
+24
+00:02:15,150 --> 00:02:22,140
+mouse clicks. Moving on to the artist layer. It is composed of one main object,
+
+25
+00:02:22,140 --> 00:02:26,099
+which is the Artist. The Artist is the object that knows how to take the
+
+26
+00:02:26,099 --> 00:02:30,900
+Renderer and use it to put ink on the canvas. Everything you see on a Matplotlib
+
+27
+00:02:30,900 --> 00:02:36,750
+figure is an Artist instance. The title, the lines, the tick labels, the
+
+28
+00:02:36,750 --> 00:02:43,260
+images, and so on, all correspond to an individual Artist. There are two types of
+
+29
+00:02:43,260 --> 00:02:48,950
+Artist objects. The first type is the primitive type, such as a line, a
+
+30
+00:02:48,950 --> 00:02:54,629
+rectangle, a circle, or text. And the second type is the composite type, such
+
+31
+00:02:54,629 --> 00:03:01,109
+as the figure or the axes. The top-level Matplotlib object that contains and
+
+32
+00:03:01,109 --> 00:03:06,030
+manages all of the elements in a given graphic is the figure Artist, and the
+
+33
+00:03:06,030 --> 00:03:10,799
+most important composite artist is the axes because it is where most of the
+
+34
+00:03:10,799 --> 00:03:16,620
+Matplotlib API plotting methods are defined, including methods to create and
+
+35
+00:03:16,620 --> 00:03:23,099
+manipulate the ticks, the axis lines, the grid or the plot background. Now it
+
+36
+00:03:23,099 --> 00:03:27,930
+is important to note that each composite artist may contain other composite
+
+37
+00:03:27,930 --> 00:03:33,419
+artists as well as primitive artists. So a figure artist for example would
+
+38
+00:03:33,419 --> 00:03:40,889
+contain an axis artist as well as a rectangle or text artists. Now let's put
+
+39
+00:03:40,889 --> 00:03:47,340
+the artist layer to use and see how we can use it to generate a graphic. So
+
+40
+00:03:47,340 --> 00:03:51,900
+let's try to generate a histogram of 10,000 random numbers using the artist
+
+41
+00:03:51,900 --> 00:03:58,169
+layer. First we import the figure canvas from the backend backend underscore agg
+
+42
+00:03:58,169 --> 00:04:05,129
+and attach the figure artist to it. Note that agg stands for anti grain geometry
+
+43
+00:04:05,129 --> 00:04:10,889
+which is a high-performance library that produces attractive images. Then we
+
+44
+00:04:10,889 --> 00:04:16,739
+import the Numpy library to generate the random numbers. Next we create an axes
+
+45
+00:04:16,739 --> 00:04:21,389
+artist. The axes artist is added automatically to the figure axes
+
+46
+00:04:21,389 --> 00:04:26,669
+container, Fig.axes. And note here that (111)
+
+47
+00:04:26,669 --> 00:04:31,830
+is from the MATLAB convention so it creates a grid with one row and
+
+48
+00:04:31,830 --> 00:04:37,470
+one column and uses the first cell in that grid for the location of the new
+
+49
+00:04:37,470 --> 00:04:43,710
+axes. Then we call the axes method hist, to generate the histogram.
+
+50
+00:04:43,710 --> 00:04:49,140
+hist creates a sequence of rectangle artists for each histogram bar and adds
+
+51
+00:04:49,140 --> 00:04:58,050
+them to the axes container. Here 100 means create 100 bins. Finally we
+
+52
+00:04:58,050 --> 00:05:06,300
+decorate the figure with a title and we save it. Now this is the generated
+
+53
+00:05:06,300 --> 00:05:13,290
+histogram and so this is how we use the artist layer to generate a graphic. As
+
+54
+00:05:13,290 --> 00:05:18,750
+for the scripting layer, it was developed for scientists who are not professional
+
+55
+00:05:18,750 --> 00:05:23,010
+programmers and I'm sure you agree with me based on the histogram that we just
+
+56
+00:05:23,010 --> 00:05:27,810
+created that the artist layer is syntactically heavy as it is meant for
+
+57
+00:05:27,810 --> 00:05:32,430
+developers and not for individuals whose goal is to perform quick exploratory
+
+58
+00:05:32,430 --> 00:05:37,980
+analysis of some data. Matplotlib's scripting layer is essentially the
+
+59
+00:05:37,980 --> 00:05:43,350
+Matplotlib.pyplot interface, which automates the process of defining a
+
+60
+00:05:43,350 --> 00:05:49,470
+canvas and defining a figure artist instance and connecting them. So
+
+61
+00:05:49,470 --> 00:05:53,580
+let's see how the same code that we used earlier using the artist layer to
+
+62
+00:05:53,580 --> 00:05:59,460
+generate a histogram of 10,000 random numbers would now look like. So first we
+
+63
+00:05:59,460 --> 00:06:03,810
+import the pyplot interface and you can see how all the methods associated
+
+64
+00:06:03,810 --> 00:06:07,980
+with creating the histogram and other artist objects and manipulating them
+
+65
+00:06:07,980 --> 00:06:12,480
+whether it is the hist method or showing the figure are part of the pyplot
+
+66
+00:06:12,480 --> 00:06:16,320
+interface. If you're interested in learning more about the history of
+
+67
+00:06:16,320 --> 00:06:20,970
+Matplotlib and its architecture, this link will take you to a chapter written
+
+68
+00:06:20,970 --> 00:06:27,650
+by the creators of Matplotlib themselves. It is definitely a recommended read.
+
