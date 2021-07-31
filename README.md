@@ -76,4 +76,5 @@ In this lesson you will learn about:
 ![mat](images/matplotlibarch.png)
 ### Backend Layer
 ![backend layer](images/backendlayer.png)
-
+### Artist Layer
+![artist layer](images/artistlayer.png)
