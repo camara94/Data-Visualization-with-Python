@@ -156,3 +156,5 @@ In this lesson you will learn about:
 ![barchart](images/barchart.png)
 ### Dataset - Recap
 ![data](images/datasetrecap.png)
+### Dataset - Processed
+![dataset](images/dataprocessed.png)
