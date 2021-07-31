@@ -66,3 +66,5 @@ In this lesson you will learn about:
 ![emphasizebacon](images/emphasizebacon.png)
 ### Comparaison
 ![comparaison](images/comparaison.png)
+### More Examples
+![more example](images/moreexamples.png)
