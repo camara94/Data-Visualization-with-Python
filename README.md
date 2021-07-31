@@ -172,3 +172,5 @@ In this lesson you will learn about:
 ![data](images/datasetrecap.png)
 ### Dataset - Processed
 ![dataset](images/dataprocessed.png)
+### Pie Chart 
+![df_continent](images/dfcontinents.png)
