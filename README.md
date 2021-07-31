@@ -99,3 +99,6 @@ In this cours, you can already create visuals tools such as:
 ### Matplotlib - Backends - inline
 magic function **%matplotlib inline**, the limitation of this backend is we can not modify figure when it is rendered.
 ![plot function](images/plot.png)
+### Matplotlib - Backends - Notebook
+With a notebook backend in place, if a plt function is called, it checks if an active figure exists, and any functions you call will be applied to this active figure. If figure does not exist, it renders a news figure.
+![notebook backend](images/notebookbackend.png)
