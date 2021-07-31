@@ -96,3 +96,6 @@ In this cours, you can already create visuals tools such as:
 * bar charts
 * box plots
 * and any more using one function **Plot**
+### Matplotlib - Backends - inline
+magic function **%matplotlib inline**, the limitation of this backend is we can not modify figure when it is rendered.
+![plot function](images/plot.png)
