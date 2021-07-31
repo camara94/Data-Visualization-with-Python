@@ -54,3 +54,5 @@ In this lesson you will learn about:
 ![example remove bg](images/exampleremoveredundantlegend.png)
 ### Example - Remove 3D
 ![example remove bg](images/exampleremove3d.png)
+### Example - Remove Text Bolding
+![example remove bg](images/exampleremovetextbold.png)
