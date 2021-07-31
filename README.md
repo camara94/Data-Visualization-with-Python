@@ -154,3 +154,5 @@ In this lesson you will learn about:
 ![nphist](images/nphistogram.png)
 ### Bar Charts
 ![barchart](images/barchart.png)
+### Dataset - Recap
+![data](images/datasetrecap.png)
