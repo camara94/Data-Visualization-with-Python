@@ -83,3 +83,6 @@ In this lesson you will learn about:
 ![figure](images/figartist.png)
 ### Scripting Layer
 ![scriptinglayer](images/scrptinglayer.png)
+### Further Reading
+![further](images/furtherreading.png)
+[https://aosabook.org/en/matplotlib.html](https://aosabook.org/en/matplotlib.htm
