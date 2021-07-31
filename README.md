@@ -146,3 +146,5 @@ In this lesson you will learn about:
 ![hist](images/histogramm.png)
 ### Dataset Recap
 ![data](images/datasetrecap.png)
+### Dataset - Processed
+![processed](images/processed.png)
