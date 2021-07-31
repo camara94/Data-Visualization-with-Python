@@ -39,3 +39,6 @@ In this lesson you will learn about:
 * Basic plotting with Matplotlib.
 * The dataset on immigration to Canada, which will be used extensively throughout the course.
 * Generating line plots using Matplotlib.
+### Introduction to Data Visualization
+#### Why Build Visuals ?
+![whybuild](images/whybuild.png)
