@@ -72,3 +72,5 @@ In this lesson you will learn about:
 ### Introduction to Matplotlib
 #### Matplotlib - History
 ![mat](images/matplotlibhist.png)
+#### Matplotlib - Archictecture
+![mat](images/matplotlibarch.png)
