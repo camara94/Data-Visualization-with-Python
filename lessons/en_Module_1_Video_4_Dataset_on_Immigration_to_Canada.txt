@@ -1,0 +1,31 @@
+In this video, we will learn more about the dataset that we will be using
+throughout the course. The population division of the United Nations compiled
+immigration data pertaining to 45 countries. The data consist of the total
+number of immigrants from all over the world to each of the 45 countries as
+well as other metadata pertaining to the immigrants countries of origin. In this
+course, we will focus on immigration to Canada and we will work primarily with
+the data set involving immigration to the great white north Here is a snapshot
+of the UN data on immigration to Canada in the form of an excel file. As you can
+see, the first twenty rows contain textual data about the UN Department and other
+irrelevant information. Row 21 contains the labels of the columns. Following that
+each row represents a country and contains metadata about the country such
+as what continent it resides in, what region it belongs to, and whether the
+region is developing or developed. Each row also contains the total number of
+immigrants from that country for the years 1980 all the way to 2013.
+Throughout this course, we will be using pandas for any analysis of the data
+before creating any visualizations. So in order to start creating different types
+of plots of the data whether for exploratory analysis or for presentation,
+we will need to import the data into a pandas dataframe. To do that, we will
+need to import the pandas library as well as the xlrd library, which is
+required to extract data from Excel spreadsheet files. Then we call the
+pandas function read_excel to read the data into a pandas dataframe.
+And let's name this dataframe df_can. Notice how we're skipping
+the first twenty rows to read only the data  corresponding to each country. If you
+want to confirm that you have imported your data correctly, in pandas, you can
+always use the head function to display the first five rows of the dataframe. So,
+if we call this function on our dataframe, df_can, here is the
+output. As you can see, the output of the head function looks correct with the
+columns having the correct labels and each row representing a country and
+containing the total number of immigrants from that country. This
+concludes our video on the immigration to Canada dataset. I will see you in the
+next video.

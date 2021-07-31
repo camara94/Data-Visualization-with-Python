@@ -1,0 +1,124 @@
+0
+00:00:01,040 --> 00:00:05,990
+In this video, we will learn more about the dataset that we will be using
+
+1
+00:00:05,990 --> 00:00:11,720
+throughout the course. The population division of the United Nations compiled
+
+2
+00:00:11,720 --> 00:00:16,970
+immigration data pertaining to 45 countries. The data consist of the total
+
+3
+00:00:16,970 --> 00:00:21,590
+number of immigrants from all over the world to each of the 45 countries as
+
+4
+00:00:21,590 --> 00:00:27,289
+well as other metadata pertaining to the immigrants countries of origin. In this
+
+5
+00:00:27,289 --> 00:00:32,419
+course, we will focus on immigration to Canada and we will work primarily with
+
+6
+00:00:32,419 --> 00:00:37,879
+the data set involving immigration to the great white north Here is a snapshot
+
+7
+00:00:37,879 --> 00:00:43,909
+of the UN data on immigration to Canada in the form of an excel file. As you can
+
+8
+00:00:43,909 --> 00:00:49,850
+see, the first twenty rows contain textual data about the UN Department and other
+
+9
+00:00:49,850 --> 00:00:56,659
+irrelevant information. Row 21 contains the labels of the columns. Following that
+
+10
+00:00:56,659 --> 00:01:02,569
+each row represents a country and contains metadata about the country such
+
+11
+00:01:02,569 --> 00:01:07,490
+as what continent it resides in, what region it belongs to, and whether the
+
+12
+00:01:07,490 --> 00:01:12,620
+region is developing or developed. Each row also contains the total number of
+
+13
+00:01:12,620 --> 00:01:18,370
+immigrants from that country for the years 1980 all the way to 2013.
+
+14
+00:01:18,370 --> 00:01:23,120
+Throughout this course, we will be using pandas for any analysis of the data
+
+15
+00:01:23,120 --> 00:01:28,760
+before creating any visualizations. So in order to start creating different types
+
+16
+00:01:28,760 --> 00:01:33,650
+of plots of the data whether for exploratory analysis or for presentation,
+
+17
+00:01:33,650 --> 00:01:40,310
+we will need to import the data into a pandas dataframe. To do that, we will
+
+18
+00:01:40,310 --> 00:01:45,440
+need to import the pandas library as well as the xlrd library, which is
+
+19
+00:01:45,440 --> 00:01:50,120
+required to extract data from Excel spreadsheet files. Then we call the
+
+20
+00:01:50,120 --> 00:01:54,800
+pandas function read_excel to read the data into a pandas dataframe.
+
+21
+00:01:54,800 --> 00:02:00,890
+And let's name this dataframe df_can. Notice how we're skipping
+
+22
+00:02:00,890 --> 00:02:07,640
+the first twenty rows to read only the data  corresponding to each country. If you
+
+23
+00:02:07,640 --> 00:02:12,019
+want to confirm that you have imported your data correctly, in pandas, you can
+
+24
+00:02:12,019 --> 00:02:17,680
+always use the head function to display the first five rows of the dataframe. So,
+
+25
+00:02:17,680 --> 00:02:23,799
+if we call this function on our dataframe, df_can, here is the
+
+26
+00:02:23,799 --> 00:02:28,870
+output. As you can see, the output of the head function looks correct with the
+
+27
+00:02:28,870 --> 00:02:33,129
+columns having the correct labels and each row representing a country and
+
+28
+00:02:33,129 --> 00:02:37,900
+containing the total number of immigrants from that country. This
+
+29
+00:02:37,900 --> 00:02:42,340
+concludes our video on the immigration to Canada dataset. I will see you in the
+
+30
+00:02:42,340 --> 00:02:44,879
+next video.
+
