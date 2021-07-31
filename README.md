@@ -125,3 +125,9 @@ Pandas is also a built-in implementation of it. there, plotting in pandas is as 
 ![processed](images/processed.png)
 ### Creating Line Plot
 ![creating line plot](images/creatinglineplot.png)
+## Module 2 - Basic Visualization Tools
+### Learning Objectives
+In this lesson you will learn about:
+* Area plots, and how to create them with Matplotlib.
+* Histograms, and how to create them with Matplotlib.
+* Bar charts, and how to create them with Matplotlib.
