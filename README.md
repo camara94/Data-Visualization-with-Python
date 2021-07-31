@@ -133,3 +133,5 @@ In this lesson you will learn about:
 * Bar charts, and how to create them with Matplotlib.
 ### Area Plots 
 ![areaplot](images/areaplot.png)
+### Dataset - Recap
+![datasetrecap](images/datasetrecap.png)
