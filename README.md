@@ -62,3 +62,5 @@ In this lesson you will learn about:
 ![remove wedges](images/removewidget.png)
 ### Example - Thicken Lines
 ![thicken lines](images/tickenline.png)
+### Example - Emphasize Bacon
+![emphasizebacon](images/emphasizebacon.png)
