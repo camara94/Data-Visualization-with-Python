@@ -140,3 +140,5 @@ In this lesson you will learn about:
 ### Generating Area Plots
 ![generatingareaplot](images/generatingareaplot.png)
 ![generatingareaplot](images/areaplot2.png)
+### Area Plots
+![generatingareaplot](images/areaplotfig.png)
