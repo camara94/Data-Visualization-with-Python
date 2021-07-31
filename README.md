@@ -58,3 +58,5 @@ In this lesson you will learn about:
 ![example remove bg](images/exampleremovetextbold.png)
 ### Example - Reduce Color
 ![reduce colr](images/reducecolr.png)
+### Example - Remove Wedges
+![remove wedges](images/removewidget.png)
