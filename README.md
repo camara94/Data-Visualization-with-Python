@@ -56,3 +56,5 @@ In this lesson you will learn about:
 ![example remove bg](images/exampleremove3d.png)
 ### Example - Remove Text Bolding
 ![example remove bg](images/exampleremovetextbold.png)
+### Example - Reduce Color
+![reduce colr](images/reducecolr.png)
