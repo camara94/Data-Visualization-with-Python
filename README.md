@@ -44,3 +44,5 @@ In this lesson you will learn about:
 ![whybuild](images/whybuild.png)
 ### Best Practices
 ![bestpractice](images/bestpractices.png)
+### Example
+![example](images/example.png)
