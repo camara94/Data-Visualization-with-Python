@@ -1,0 +1,204 @@
+0
+00:00:02,310 --> 00:00:08,440
+In this video, we will learn how to use Matplotlib to create plots and we will
+
+1
+00:00:08,440 --> 00:00:11,910
+do so using the Jupyter notebook as our environment.
+
+2
+00:00:11,910 --> 00:00:17,710
+Now Matplotlib is a well-established data visualization library that is well
+
+3
+00:00:17,710 --> 00:00:22,119
+supported in different environments such as in Python scripts, in the iPython
+
+4
+00:00:22,119 --> 00:00:27,700
+shell, web application servers, in graphical user interface toolkits as
+
+5
+00:00:27,700 --> 00:00:33,070
+well as the Jupyter notebook. Now for those of you who don't know what the
+
+6
+00:00:33,070 --> 00:00:37,690
+Jupyter notebook is, it's an open source web application that allows you to
+
+7
+00:00:37,690 --> 00:00:43,449
+create and share documents that contain live code visualizations and some
+
+8
+00:00:43,449 --> 00:00:48,370
+explanatory text as well. Jupyter has some specialized support for Matplotlib
+
+9
+00:00:48,370 --> 00:00:53,379
+and so if you start a Jupyter notebook, all you have to do is import Matplotlib
+
+10
+00:00:53,379 --> 00:00:59,320
+and you're ready to go. In this course, we will be working mostly with the
+
+11
+00:00:59,320 --> 00:01:03,940
+scripting interface. In other words, we will learn how to create almost all of
+
+12
+00:01:03,940 --> 00:01:09,159
+the visualization tools using the scripting interface. As we proceed in the
+
+13
+00:01:09,159 --> 00:01:13,360
+course, you will appreciate the power of this interface when you find out that
+
+14
+00:01:13,360 --> 00:01:17,860
+you can literally create almost all of the conventional visualization tools
+
+15
+00:01:17,860 --> 00:01:24,969
+such as histograms, bar charts, box plots and many others using one function only:
+
+16
+00:01:24,969 --> 00:01:30,700
+the plot function. Let's start with an example. Let's first import the scripting
+
+17
+00:01:30,700 --> 00:01:37,390
+interface as plt and let's plot a circular mark at the position (5, 5), so x
+
+18
+00:01:37,390 --> 00:01:43,509
+equals 5 and y equals 5. Notice how the plot was generated within the browser
+
+19
+00:01:43,509 --> 00:01:48,789
+and not in a separate window for example. If the plot gets generated in a new
+
+20
+00:01:48,789 --> 00:01:53,829
+window then you can enforce generating plots within the browser using what's
+
+21
+00:01:53,829 --> 00:02:01,689
+called a magic function. a magic function starts with % Matplotlib, and to enforce
+
+22
+00:02:01,689 --> 00:02:06,539
+plots to be rendered within the browser, you pass in inline as the backend.
+
+23
+00:02:06,539 --> 00:02:12,250
+Matplotlib has a number of different backends available. One limitation of
+
+24
+00:02:12,250 --> 00:02:15,790
+this backend is that you cannot modify a figure once
+
+25
+00:02:15,790 --> 00:02:20,230
+it's rendered. So after rendering the above figure, there is no way for us to
+
+26
+00:02:20,230 --> 00:02:26,290
+add, for example, a figure title or label its axes. You will need to generate a
+
+27
+00:02:26,290 --> 00:02:31,750
+new plot and add a title and the axes labels before calling the show
+
+28
+00:02:31,750 --> 00:02:37,840
+function. A backend that overcomes this limitation is the notebook backend.
+
+29
+00:02:37,840 --> 00:02:43,780
+With the notebook backend in place, if a plt function is called, it checks if an
+
+30
+00:02:43,780 --> 00:02:48,879
+active figure exists, and any functions you call will be applied to this active
+
+31
+00:02:48,879 --> 00:02:55,930
+figure. If a figure does not exist, it renders a new figure. So when we call the
+
+32
+00:02:55,930 --> 00:03:01,629
+plt.plot function to plot a circular mark at position (5, 5), the backend checks
+
+33
+00:03:01,629 --> 00:03:07,780
+if an active figure exists since there isn't an active figure it generates a
+
+34
+00:03:07,780 --> 00:03:14,169
+figure and adds a circular mark to position (5, 5). And what is beautiful about
+
+35
+00:03:14,169 --> 00:03:19,120
+this back end is that now we can easily add a title for example or labels to the
+
+36
+00:03:19,120 --> 00:03:26,129
+axes after the plot was rendered, without the need to regenerate the figure.
+
+37
+00:03:26,129 --> 00:03:32,199
+Finally, another thing that is great about Matplotlib is that pandas also has
+
+38
+00:03:32,199 --> 00:03:37,720
+a built-in implementation of it. Therefore, plotting in pandas is as simple as
+
+39
+00:03:37,720 --> 00:03:43,030
+calling the plot function on a given pandas series or dataframe. So, say we
+
+40
+00:03:43,030 --> 00:03:46,629
+have a data frame of the number of immigrants from India and China to
+
+41
+00:03:46,629 --> 00:03:53,199
+Canada from 1980 to 1996 and say we're interested in generating a line plot of
+
+42
+00:03:53,199 --> 00:03:58,329
+these data. All we have to do is call the plot function on this dataframe which
+
+43
+00:03:58,329 --> 00:04:04,150
+we called India_China_df and set the parameter kind
+
+44
+00:04:04,150 --> 00:04:10,799
+to line and there you have it: a line plot of the data in the data frame.
+
+45
+00:04:10,889 --> 00:04:15,430
+Plotting a histogram of the data is not any different. So say we would like to
+
+46
+00:04:15,430 --> 00:04:20,320
+plot a histogram of the India column in our dataframe. All we have to do is call
+
+47
+00:04:20,320 --> 00:04:25,270
+the plot function on that column and set the parameter kind to hist, for histogram.
+
+48
+00:04:25,270 --> 00:04:29,529
+And there you have it. A histogram of the number of Indian immigrants
+
+49
+00:04:29,529 --> 00:04:36,459
+to Canada from 1980 to 1996. This concludes our video on basic plotting
+
+50
+00:04:36,459 --> 00:04:40,829
+with Matplotlib. See you in the next video.
+

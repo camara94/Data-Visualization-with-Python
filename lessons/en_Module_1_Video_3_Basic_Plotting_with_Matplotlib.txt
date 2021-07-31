@@ -1,0 +1,51 @@
+In this video, we will learn how to use Matplotlib to create plots and we will
+do so using the Jupyter notebook as our environment.
+Now Matplotlib is a well-established data visualization library that is well
+supported in different environments such as in Python scripts, in the iPython
+shell, web application servers, in graphical user interface toolkits as
+well as the Jupyter notebook. Now for those of you who don't know what the
+Jupyter notebook is, it's an open source web application that allows you to
+create and share documents that contain live code visualizations and some
+explanatory text as well. Jupyter has some specialized support for Matplotlib
+and so if you start a Jupyter notebook, all you have to do is import Matplotlib
+and you're ready to go. In this course, we will be working mostly with the
+scripting interface. In other words, we will learn how to create almost all of
+the visualization tools using the scripting interface. As we proceed in the
+course, you will appreciate the power of this interface when you find out that
+you can literally create almost all of the conventional visualization tools
+such as histograms, bar charts, box plots and many others using one function only:
+the plot function. Let's start with an example. Let's first import the scripting
+interface as plt and let's plot a circular mark at the position (5, 5), so x
+equals 5 and y equals 5. Notice how the plot was generated within the browser
+and not in a separate window for example. If the plot gets generated in a new
+window then you can enforce generating plots within the browser using what's
+called a magic function. a magic function starts with % Matplotlib, and to enforce
+plots to be rendered within the browser, you pass in inline as the backend.
+Matplotlib has a number of different backends available. One limitation of
+this backend is that you cannot modify a figure once
+it's rendered. So after rendering the above figure, there is no way for us to
+add, for example, a figure title or label its axes. You will need to generate a
+new plot and add a title and the axes labels before calling the show
+function. A backend that overcomes this limitation is the notebook backend.
+With the notebook backend in place, if a plt function is called, it checks if an
+active figure exists, and any functions you call will be applied to this active
+figure. If a figure does not exist, it renders a new figure. So when we call the
+plt.plot function to plot a circular mark at position (5, 5), the backend checks
+if an active figure exists since there isn't an active figure it generates a
+figure and adds a circular mark to position (5, 5). And what is beautiful about
+this back end is that now we can easily add a title for example or labels to the
+axes after the plot was rendered, without the need to regenerate the figure.
+Finally, another thing that is great about Matplotlib is that pandas also has
+a built-in implementation of it. Therefore, plotting in pandas is as simple as
+calling the plot function on a given pandas series or dataframe. So, say we
+have a data frame of the number of immigrants from India and China to
+Canada from 1980 to 1996 and say we're interested in generating a line plot of
+these data. All we have to do is call the plot function on this dataframe which
+we called India_China_df and set the parameter kind
+to line and there you have it: a line plot of the data in the data frame.
+Plotting a histogram of the data is not any different. So say we would like to
+plot a histogram of the India column in our dataframe. All we have to do is call
+the plot function on that column and set the parameter kind to hist, for histogram.
+And there you have it. A histogram of the number of Indian immigrants
+to Canada from 1980 to 1996. This concludes our video on basic plotting
+with Matplotlib. See you in the next video.
