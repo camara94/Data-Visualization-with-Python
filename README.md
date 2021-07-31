@@ -68,3 +68,7 @@ In this lesson you will learn about:
 ![comparaison](images/comparaison.png)
 ### More Examples
 ![more example](images/moreexamples.png)
+[https://www.darkhorseanalytics.com/](https://www.darkhorseanalytics.com/)
+### Introduction to Matplotlib
+#### Matplotlib - History
+![mat](images/matplotlibhist.png)
