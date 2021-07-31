@@ -48,3 +48,5 @@ In this lesson you will learn about:
 ![example](images/example.png)
 ### Example - Remove Background
 ![example remove bg](images/exampleremovebg.png)
+### Example - Remove Border
+![example remove bg](images/exampleremoveborder.png)
