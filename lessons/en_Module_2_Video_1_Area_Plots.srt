@@ -1,0 +1,208 @@
+0
+00:00:01,300 --> 00:00:07,029
+In this video, we will learn about another visualization tool: the area plot,
+
+1
+00:00:07,029 --> 00:00:11,410
+which is actually an extension of the line plot that we learned about in an
+
+2
+00:00:11,410 --> 00:00:19,210
+earlier video. So what is an area plot? An area plot also known as an area chart or
+
+3
+00:00:19,210 --> 00:00:24,519
+graph is a type of plot that depicts accumulated totals using numbers or
+
+4
+00:00:24,519 --> 00:00:30,279
+percentages over time. It is based on the line plot and is commonly used when
+
+5
+00:00:30,279 --> 00:00:35,410
+trying to compare two or more quantities. So how can we generate an area plot with
+
+6
+00:00:35,410 --> 00:00:42,070
+Matplotlib? Before we go over the code to do that, let's do a quick recap of our
+
+7
+00:00:42,070 --> 00:00:47,829
+dataset. Recall that each row represents a country and contains metadata about
+
+8
+00:00:47,829 --> 00:00:52,660
+the country such as where it is located geographically and whether it is
+
+9
+00:00:52,660 --> 00:00:58,179
+developing or developed. Each row also contains numerical figures of annual
+
+10
+00:00:58,179 --> 00:01:03,600
+immigration from that country to Canada from 1980 to 2013.
+
+11
+00:01:03,600 --> 00:01:08,470
+Now let's process the dataframe so that the country name becomes the index of
+
+12
+00:01:08,470 --> 00:01:13,240
+each row. This should make retrieving rows pertaining to specific countries a
+
+13
+00:01:13,240 --> 00:01:18,640
+lot easier. Also, let's add an extra column which represents the cumulative
+
+14
+00:01:18,640 --> 00:01:24,640
+sum of annual immigration from each country from 1980 to 2013. So for
+
+15
+00:01:24,640 --> 00:01:36,220
+Afghanistan, it is 58,639, total, and for Albania, it is 15,699 and so
+
+16
+00:01:36,220 --> 00:01:43,390
+on, and let's name our data frame df_canada. So now that we know
+
+17
+00:01:43,390 --> 00:01:48,430
+how our data is stored in the dataframe, df_canada, let's try to
+
+18
+00:01:48,430 --> 00:01:52,570
+generate area plots for the countries with the highest number of immigration
+
+19
+00:01:52,570 --> 00:01:57,610
+to Canada. We can try to find these countries by sorting our dataframe in
+
+20
+00:01:57,610 --> 00:02:04,240
+descending order of cumulative total immigration from 1980 to 2013. We use the
+
+21
+00:02:04,240 --> 00:02:08,280
+sort_values function to sort our dataframe in descending order and
+
+22
+00:02:08,280 --> 00:02:15,190
+here is the result. So it turns out that India followed by China then the UK, Philippines,
+
+23
+00:02:15,190 --> 00:02:19,390
+and Pakistan are the top five countries with the highest number of
+
+24
+00:02:19,390 --> 00:02:25,420
+immigration to Canada. So can we now go ahead and generate the area plots using
+
+25
+00:02:25,420 --> 00:02:30,670
+the first five rows of this dataframe? Not quite yet. First we need to create a
+
+26
+00:02:30,670 --> 00:02:36,310
+new dataframe of only these five countries and we need to exclude the
+
+27
+00:02:36,310 --> 00:02:41,440
+total column. More importantly, to generate the area plots for these
+
+28
+00:02:41,440 --> 00:02:46,360
+countries, we need the years to be plotted on the horizontal axis and the
+
+29
+00:02:46,360 --> 00:02:49,270
+annual immigration to be plotted on the vertical axis.
+
+30
+00:02:49,270 --> 00:02:54,850
+Note that Matplotlib plots the indices of a dataframe on the horizontal axis,
+
+31
+00:02:54,850 --> 00:02:59,350
+and with the dataframe as shown, the countries will be plotted on the
+
+32
+00:02:59,350 --> 00:03:03,990
+horizontal axis. So to fix this, we need to take the transpose of the dataframe.
+
+33
+00:03:03,990 --> 00:03:09,970
+Let's see how we can do this. After we sort our dataframe in descending order
+
+34
+00:03:09,970 --> 00:03:15,760
+of cumulative annual immigration, we create a new dataframe of the top five
+
+35
+00:03:15,760 --> 00:03:22,330
+countries and let's call it df_top5. We then select only
+
+36
+00:03:22,330 --> 00:03:28,690
+the columns representing the years 1980 to 2013 in order to exclude the total
+
+37
+00:03:28,690 --> 00:03:33,310
+column before applying the transpose method. The resulting dataframe is
+
+38
+00:03:33,310 --> 00:03:38,290
+exactly what we want, with five columns where each column represents one of the
+
+39
+00:03:38,290 --> 00:03:43,930
+top five countries and the years being the indices. Now we can go ahead and call
+
+40
+00:03:43,930 --> 00:03:49,300
+the plot function on dataframe df_top5 to generate the area
+
+41
+00:03:49,300 --> 00:03:56,500
+plots. To do that, first we import Matplotlib as mpl and its
+
+42
+00:03:56,500 --> 00:04:02,440
+scripting interface as plt. Then we call the plot function on the dataframe df_top5
+
+43
+00:04:02,440 --> 00:04:08,400
+and we set kind equals area to generate an area plot.
+
+44
+00:04:08,400 --> 00:04:15,310
+Then to complete the figure we give it a title and we label its axes. Finally we
+
+45
+00:04:15,310 --> 00:04:20,200
+call the show function to display the figure. Note that here we're generating
+
+46
+00:04:20,200 --> 00:04:25,539
+the area plot using the inline backend. And there you have it: an area plot that
+
+47
+00:04:25,539 --> 00:04:29,020
+depicts the immigration trend of the five countries with
+
+48
+00:04:29,020 --> 00:04:35,169
+the highest immigration to Canada from 1980 to 2013. In the lab session, we
+
+49
+00:04:35,169 --> 00:04:39,550
+explore area plots in more details, so make sure to complete this module's lab
+
+50
+00:04:39,550 --> 00:04:44,800
+session. And with this, we conclude our video on area plots. I'll see you in the
+
+51
+00:04:44,800 --> 00:04:47,340
+next video.
+
