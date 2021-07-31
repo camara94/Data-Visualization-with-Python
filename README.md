@@ -135,3 +135,5 @@ In this lesson you will learn about:
 ![areaplot](images/areaplot.png)
 ### Dataset - Recap
 ![datasetrecap](images/datasetrecap.png)
+### Dataset - Processed
+![datasetprocessed](images/dataprocessed.png)
