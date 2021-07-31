@@ -106,3 +106,5 @@ With a notebook backend in place, if a plt function is called, it checks if an a
 Pandas is also a built-in implementation of it. there, plotting in pandas is as simple as calling the plot function on a given pandas series or dataframe.
 #### Matplotlib - Pandas - Line
 ![pandas built-in](images/pandasplot.png)
+#### Matplotlib - Pandas - Histogram
+![pandas built-in](images/pandashist.png)
