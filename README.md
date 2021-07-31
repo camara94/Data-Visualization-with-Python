@@ -115,3 +115,5 @@ Pandas is also a built-in implementation of it. there, plotting in pandas is as 
 ![immigration data to canada](images/immigrationdatatocanada.png)
 #### Read Data into Pandas DataFrame
 ![read data](images/readdataintopandas.png)
+#### Display DataFrame
+![display dataset](images/displaydata.png)
