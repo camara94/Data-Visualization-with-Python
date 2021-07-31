@@ -108,3 +108,6 @@ Pandas is also a built-in implementation of it. there, plotting in pandas is as 
 ![pandas built-in](images/pandasplot.png)
 #### Matplotlib - Pandas - Histogram
 ![pandas built-in](images/pandashist.png)
+### Dataset on Immigration to Canada
+#### Dataset
+![dataset](images/dataset.png)
