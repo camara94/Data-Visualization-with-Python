@@ -175,3 +175,5 @@ In this lesson you will learn about:
 ### Pie Chart 
 ![df_continent](images/dfcontinents.png)
 ![piechar](images/piechart2.png)
+### Outcomes
+![outcomes](images/outcome.png)
