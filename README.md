@@ -46,3 +46,5 @@ In this lesson you will learn about:
 ![bestpractice](images/bestpractices.png)
 ### Example
 ![example](images/example.png)
+### Example - Remove Background
+![example remove bg](images/exampleremovebg.png)
