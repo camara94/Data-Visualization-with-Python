@@ -177,3 +177,6 @@ In this lesson you will learn about:
 ![piechar](images/piechart2.png)
 ### Outcomes
 ![outcomes](images/outcome.png)
+### Pie Charts Flows
+![piechartflows](images/piechartflows.png)
+[https://www.surveygizmo.com/survey-blog/pie-chart-or-bar-graph](https://www.surveygizmo.com/survey-blog/pie-chart-or-bar-graph/)
