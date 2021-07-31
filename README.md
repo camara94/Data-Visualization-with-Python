@@ -123,3 +123,5 @@ Pandas is also a built-in implementation of it. there, plotting in pandas is as 
 ![data recap](images/datasetrecap.png)
 ### Dataset - Precessed
 ![processed](images/processed.png)
+### Creating Line Plot
+![creating line plot](images/creatinglineplot.png)
