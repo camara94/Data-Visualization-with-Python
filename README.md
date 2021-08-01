@@ -180,3 +180,6 @@ In this lesson you will learn about:
 ### Pie Charts Flows
 ![piechartflows](images/piechartflows.png)
 [https://www.surveygizmo.com/survey-blog/pie-chart-or-bar-graph](https://www.surveygizmo.com/survey-blog/pie-chart-or-bar-graph/)
+### Box Plots
+![boxplot](images/boxplot.png)
+
