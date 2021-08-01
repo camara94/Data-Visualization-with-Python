@@ -184,3 +184,5 @@ In this lesson you will learn about:
 ![boxplot](images/boxplot.png)
 ### Dataset - Recap
 ![data](images/datasetrecap.png)
+### Dataset - Processed
+![dataset](images/dataprocessed.png)
