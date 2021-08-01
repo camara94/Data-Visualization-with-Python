@@ -223,3 +223,5 @@ In this lesson you will learn about:
 ![mapofcanada](images/mapofcanada.png)
 ### Map Styles - Stamen Toner
 ![stamen toner](images/stamentoner.png)
+### Map Styles - Stamen Terrain
+![stamenterrain](images/stamenterrain.png)
