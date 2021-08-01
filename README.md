@@ -207,3 +207,5 @@ In this lesson you will learn about:
 ![wordcloud](images/wordclouds.png)
 ### Seaborn and Regression Plots
 ![seaborn](images/seaborn.png)
+### Regression Plots
+![seaborn](images/seabornplot.png)
