@@ -188,3 +188,5 @@ In this lesson you will learn about:
 ![dataset](images/dataprocessed.png)
 ### Box Plots
 ![boxplot](images/boxplot2.png)
+### Scatter Plots
+![scatter](images/scatter.png)
