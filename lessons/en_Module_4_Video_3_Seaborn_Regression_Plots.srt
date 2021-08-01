@@ -1,0 +1,112 @@
+0
+00:00:00,890 --> 00:00:07,620
+In this video, we will learn about a new visualization library in Python, which is
+
+1
+00:00:07,620 --> 00:00:11,669
+Seaborn. Although Seaborn is another data
+
+2
+00:00:11,669 --> 00:00:15,809
+visualization library, it is actually based on Matplotlib.
+
+3
+00:00:15,809 --> 00:00:21,120
+It was built primarily to provide a high-level interface for drawing
+
+4
+00:00:21,120 --> 00:00:27,350
+attractive statistical graphics, such as regression plots, box plots, and so on.
+
+5
+00:00:27,350 --> 00:00:32,279
+Seaborn makes creating plots very efficient. Therefore with Seaborn you
+
+6
+00:00:32,279 --> 00:00:38,070
+can generate plots with code that is 5 times less than with Matplotlib. Let's
+
+7
+00:00:38,070 --> 00:00:42,149
+see how we can use Seaborn to create a statistical graphic. Let's look into
+
+8
+00:00:42,149 --> 00:00:48,449
+regression plots. Let's say we have a dataframe called df_total of
+
+9
+00:00:48,449 --> 00:00:55,979
+total immigration to Canada from 1980 to 2013 with the year in one column and the
+
+10
+00:00:55,979 --> 00:01:00,839
+corresponding total immigration in another column, and say we're interested
+
+11
+00:01:00,839 --> 00:01:05,850
+in creating a scatter plot along with a regression line to highlight any trends
+
+12
+00:01:05,850 --> 00:01:12,659
+in the data. With Seaborn, you can do all this with literally one line of code. The
+
+13
+00:01:12,659 --> 00:01:19,590
+way to do this, we first import Seaborn and let's import it as sns. Then, we call
+
+14
+00:01:19,590 --> 00:01:24,719
+the Seaborn regplot function. We basically tell it to use the dataframe
+
+15
+00:01:24,719 --> 00:01:30,509
+df_total and to plot the column year on the horizontal axis and
+
+16
+00:01:30,509 --> 00:01:36,030
+the column total on the vertical axis. And the output of this one line of code
+
+17
+00:01:36,030 --> 00:01:42,149
+is a scatter plot with a regression line and not just that, but also 95%
+
+18
+00:01:42,149 --> 00:01:47,429
+confidence interval. Isn't that really amazing? Seaborn's regplot function
+
+19
+00:01:47,429 --> 00:01:52,770
+also accepts additional parameters for any personal customization. So you can
+
+20
+00:01:52,770 --> 00:01:57,149
+change the color for example using the color parameter. Let's go ahead and
+
+21
+00:01:57,149 --> 00:02:03,240
+change the color to green. Also, you can change the marker shape as well using
+
+22
+00:02:03,240 --> 00:02:08,009
+the marker parameter. Let's go ahead and change the shape of our markers to a +
+
+23
+00:02:08,009 --> 00:02:13,170
+marker  instead of the default circular marker. In the lab session, we
+
+24
+00:02:13,170 --> 00:02:16,980
+explore regression plots with Seaborn in more details, so
+
+25
+00:02:16,980 --> 00:02:21,540
+make sure to complete this module's lab session. And with this we conclude our
+
+26
+00:02:21,540 --> 00:02:25,440
+short introduction to Seaborn and regression plots. I'll see you in the
+
+27
+00:02:25,440 --> 00:02:27,950
+next video.
+

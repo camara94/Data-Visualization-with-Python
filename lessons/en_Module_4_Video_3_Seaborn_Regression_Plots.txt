@@ -1,0 +1,28 @@
+In this video, we will learn about a new visualization library in Python, which is
+Seaborn. Although Seaborn is another data
+visualization library, it is actually based on Matplotlib.
+It was built primarily to provide a high-level interface for drawing
+attractive statistical graphics, such as regression plots, box plots, and so on.
+Seaborn makes creating plots very efficient. Therefore with Seaborn you
+can generate plots with code that is 5 times less than with Matplotlib. Let's
+see how we can use Seaborn to create a statistical graphic. Let's look into
+regression plots. Let's say we have a dataframe called df_total of
+total immigration to Canada from 1980 to 2013 with the year in one column and the
+corresponding total immigration in another column, and say we're interested
+in creating a scatter plot along with a regression line to highlight any trends
+in the data. With Seaborn, you can do all this with literally one line of code. The
+way to do this, we first import Seaborn and let's import it as sns. Then, we call
+the Seaborn regplot function. We basically tell it to use the dataframe
+df_total and to plot the column year on the horizontal axis and
+the column total on the vertical axis. And the output of this one line of code
+is a scatter plot with a regression line and not just that, but also 95%
+confidence interval. Isn't that really amazing? Seaborn's regplot function
+also accepts additional parameters for any personal customization. So you can
+change the color for example using the color parameter. Let's go ahead and
+change the color to green. Also, you can change the marker shape as well using
+the marker parameter. Let's go ahead and change the shape of our markers to a +
+marker  instead of the default circular marker. In the lab session, we
+explore regression plots with Seaborn in more details, so
+make sure to complete this module's lab session. And with this we conclude our
+short introduction to Seaborn and regression plots. I'll see you in the
+next video.
