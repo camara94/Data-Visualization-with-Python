@@ -1,0 +1,27 @@
+In this video, we will continue working with the Folium library and learn how
+to superimpose markers on top of a map for interesting visualizations. In the
+previous video, we learned how to create a world map centred around Canada, so
+let's create this map again and name it canada_map this time. Ontario
+is a Canadian province and contains about 40 percent of the Canadian
+population. It is considered Canada's most populous province. Let's see how we
+can add a circular mark to the centre of Ontario. To do that, we need to create
+what is called a feature group. Let's go ahead and create a feature group named
+ontario. Now when a feature group is created, it is empty and that means
+what's next is to start creating what is called children and adding them to the
+feature group. So let's create a child in the form of a red circular mark located
+at the centre of the Ontario province. We specify the location of the child by
+passing in its latitude and longitude values. And once we're done adding
+children to the feature group we add the featured group to the map. And there you
+have it. A red circular mark superimposed on top of the map and added to the
+centre of the province of Ontario. Now it would be nice if we could actually label
+this marker in order to let other people know what it actually represents. To do
+that, we simply use the marker function and the pop up parameter to pass in
+whatever text we want to add to this marker. And there you go. Now our marker
+displays Ontario when clicked on. In the lab session, we will look into a
+real-world example and explore crime rate in San Francisco. We will create a
+map of San Francisco and superimpose thousands of these markers on top of the
+map. Not just that but I'll show you how you can also create clusters of markers
+in order to make your map look less congested. This module's lab session is a
+very interesting one so please make sure to complete it.
+And with this, we conclude our video on adding markers to maps with Folium. I'll
+see you in the next video.

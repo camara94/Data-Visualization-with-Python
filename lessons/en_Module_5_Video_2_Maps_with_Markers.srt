@@ -1,0 +1,108 @@
+0
+00:00:00,030 --> 00:00:05,759
+In this video, we will continue working with the Folium library and learn how
+
+1
+00:00:05,759 --> 00:00:12,120
+to superimpose markers on top of a map for interesting visualizations. In the
+
+2
+00:00:12,120 --> 00:00:17,760
+previous video, we learned how to create a world map centred around Canada, so
+
+3
+00:00:17,760 --> 00:00:23,460
+let&#39;s create this map again and name it canada_map this time. Ontario
+
+4
+00:00:23,460 --> 00:00:27,449
+is a Canadian province and contains about 40 percent of the Canadian
+
+5
+00:00:27,449 --> 00:00:32,969
+population. It is considered Canada&#39;s most populous province. Let&#39;s see how we
+
+6
+00:00:32,969 --> 00:00:39,360
+can add a circular mark to the centre of Ontario. To do that, we need to create
+
+7
+00:00:39,360 --> 00:00:44,010
+what is called a feature group. Let&#39;s go ahead and create a feature group named
+
+8
+00:00:44,010 --> 00:00:49,620
+ontario. Now when a feature group is created, it is empty and that means
+
+9
+00:00:49,620 --> 00:00:54,239
+what&#39;s next is to start creating what is called children and adding them to the
+
+10
+00:00:54,239 --> 00:01:00,359
+feature group. So let&#39;s create a child in the form of a red circular mark located
+
+11
+00:01:00,359 --> 00:01:05,460
+at the centre of the Ontario province. We specify the location of the child by
+
+12
+00:01:05,459 --> 00:01:10,530
+passing in its latitude and longitude values. And once we&#39;re done adding
+
+13
+00:01:10,530 --> 00:01:15,900
+children to the feature group we add the featured group to the map. And there you
+
+14
+00:01:15,900 --> 00:01:21,270
+have it. A red circular mark superimposed on top of the map and added to the
+
+15
+00:01:21,270 --> 00:01:26,909
+centre of the province of Ontario. Now it would be nice if we could actually label
+
+16
+00:01:26,909 --> 00:01:33,780
+this marker in order to let other people know what it actually represents. To do
+
+17
+00:01:33,780 --> 00:01:38,970
+that, we simply use the marker function and the pop up parameter to pass in
+
+18
+00:01:38,970 --> 00:01:44,189
+whatever text we want to add to this marker. And there you go. Now our marker
+
+19
+00:01:44,189 --> 00:01:49,740
+displays Ontario when clicked on. In the lab session, we will look into a
+
+20
+00:01:49,740 --> 00:01:54,990
+real-world example and explore crime rate in San Francisco. We will create a
+
+21
+00:01:54,990 --> 00:02:00,000
+map of San Francisco and superimpose thousands of these markers on top of the
+
+22
+00:02:00,000 --> 00:02:05,100
+map. Not just that but I&#39;ll show you how you can also create clusters of markers
+
+23
+00:02:05,100 --> 00:02:11,370
+in order to make your map look less congested. This module&#39;s lab session is a
+
+24
+00:02:11,370 --> 00:02:14,280
+very interesting one so please make sure to complete it.
+
+25
+00:02:14,280 --> 00:02:19,200
+And with this, we conclude our video on adding markers to maps with Folium. I&#39;ll
+
+26
+00:02:19,200 --> 00:02:22,700
+see you in the next video.
+
