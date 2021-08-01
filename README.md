@@ -192,3 +192,5 @@ In this lesson you will learn about:
 ![scatter](images/scatter.png)
 ### Dataset - Recap
 ![data](images/datasetrecap.png)
+### Dataset - Processed
+![dataset](images/dataprocessed.png)
