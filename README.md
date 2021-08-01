@@ -228,3 +228,5 @@ In this lesson you will learn about:
 ### Maps with Markers
 ### Add a Marker
 ![marker](images/maker.png)
+### Label the Marker
+![makerpup](images/makerpup.png)
