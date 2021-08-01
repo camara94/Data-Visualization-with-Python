@@ -217,3 +217,5 @@ In this lesson you will learn about:
 * Creating Choropleth maps with Folium
 ### Introduction to Folium 
 ![folium](images/folium.png)
+### Creating a World Map
+![worldmap](images/worldmap.png)
