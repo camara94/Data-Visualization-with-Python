@@ -1,0 +1,47 @@
+In this video, we will learn about another visualization tool: the pie chart,
+and we will learn how to create it using Matplotlib.
+So what is a pie chart? A pie chart is a circular statistical graphic divided
+into slices to illustrate numerical proportion. For example, here is a pie
+chart of the Canadian federal election back in 2015 were the Liberals in red
+won more than 50% of the seats in the House of Commons. That is why the red
+color occupies more than half of the circle. So how do we create a pie chart
+with Matplotlib? Before we go over the code to do that, let's do a quick recap
+of our dataset. Recall that each row represents a country and contains
+metadata about the country such as where it is located geographically and whether
+it is developing or developed. Each row also contains numerical figures of
+annual immigration from that country to Canada from 1980 to 2013.
+Now let's process the dataframe so that the country name becomes the index of
+each row. This should make retrieving rows pertaining to specific countries a
+lot easier. Also let's add an extra column which represents the cumulative
+sum of annual immigration from each country from 1980 to 2013. So for
+Afghanistan for example, it is 58,639, total, and for Albania, it is
+15,699 and so on. And let's name our dataframe df_canada. So now
+that we know how our data is stored in the dataframe df_canada, say
+we're interested in visualizing a breakdown of immigration to Canada
+continent wise. The first step is to group our data by
+continent using the continent column and we use pandas for this. We call the
+pandas groupby function on df_canada and we sum the number
+of immigrants from the countries that belong to the
+same continent. Here is the resulting dataframe, and let's name it
+df_continents. The resulting dataframe has six rows, each
+representing a continent and 35 columns representing the years from 1980 to 2013
+plus the cumulative sum of immigration for each continent. And now we're ready
+to start creating our pie chart. We start with the usual, importing Matplotlib as
+mpl and its scripting layer the pyplot interface as plt. Then we call the
+plot function on column total of the dataframe df_continents and
+we set kind equals pie to generate a pie chart. Then to complete the figure we
+give it a title. Finally we call the show function to
+display the figure. And there you have it. A pie chart that depicts each continent's
+proportion of immigration to Canada from 1980 to 2013. In the lab session, we will
+go through the process of creating a very professional-looking and
+aesthetically pleasing pie chart and transform the pie chart that we just
+created into one that looks like this. So make sure to complete this module's lab
+session. One last comment on pie charts. There are some very vocal opponents to
+the use of pie charts under any circumstances. Most argue that pie charts
+fail to accurately display data with any consistency. Bar charts are much
+better when it comes to representing the data in a consistent way and getting the
+message across. If you're interested in learning more about the arguments
+against pie charts, here is a link to a very interesting article that discusses
+very clearly the flaws of pie charts. You can also find the link under the video.
+And with this we conclude our video on pie charts. I'll see you in the next
+video.
