@@ -1,0 +1,29 @@
+In this video, we will learn about a very interesting data visualization library
+in Python which is Folium. Folium is a powerful data visualization library in
+Python that was built primarily to help people visualize geospatial data. With
+Folium, you can create a map of any location in the world as long as you
+know its latitude and longitude values. You can also create a map and
+superimpose markers as well as clusters of markers on top of the map for cool
+and very interesting visualizations. You can also create maps of different styles
+such as street level map, stamen map and, a couple others which we will look
+into in just a moment. Creating a world map with Folium is pretty
+straightforward. You simply call the map function and that is all. What is really
+interesting about the maps created by Folium is that they are interactive, so
+you can zoom in and out after the map is rendered, which is a super useful feature.
+The default map style is the open street map, which shows a street view of an area
+when you're zoomed in and shows the borders of the world countries when
+you're zoomed all the way out. Now let's create a world map centred around
+Canada. To do that, we pass in the latitude and the longitude values of
+Canada using the location parameter and with Folium you can set the initial zoom
+level using the zoom start parameter. Now I say initial because you can easily
+change the zoom level after the map is rendered by zooming in or zooming out.
+You can play with this parameter to figure out what the initial zoom level
+looks like for different values. Now, let's set the zoom level for our map of
+Canada to 4. And there you go. Here is a world map centred around Canada.
+Another amazing feature of Folium is that you can create different map styles
+using the tiles parameter. Let's create a stamen toner map of Canada. This
+style is great for visualizing and exploring river meanders
+and coastal zones. Another style is stamen terrain. Let's create a map of
+Canada in stamen terrain. This style is great for visualizing hill shading and
+natural vegetation colors. And with this we conclude our introduction to Folium.
+I'll see you in the next video.

@@ -1,0 +1,116 @@
+0
+00:00:00,030 --> 00:00:05,250
+In this video, we will learn about a very interesting data visualization library
+
+1
+00:00:05,250 --> 00:00:11,340
+in Python which is Folium. Folium is a powerful data visualization library in
+
+2
+00:00:11,340 --> 00:00:17,580
+Python that was built primarily to help people visualize geospatial data. With
+
+3
+00:00:17,580 --> 00:00:22,529
+Folium, you can create a map of any location in the world as long as you
+
+4
+00:00:22,529 --> 00:00:27,390
+know its latitude and longitude values. You can also create a map and
+
+5
+00:00:27,390 --> 00:00:33,540
+superimpose markers as well as clusters of markers on top of the map for cool
+
+6
+00:00:33,540 --> 00:00:38,250
+and very interesting visualizations. You can also create maps of different styles
+
+7
+00:00:38,250 --> 00:00:42,989
+such as street level map, stamen map and, a couple others which we will look
+
+8
+00:00:42,989 --> 00:00:47,969
+into in just a moment. Creating a world map with Folium is pretty
+
+9
+00:00:47,969 --> 00:00:54,719
+straightforward. You simply call the map function and that is all. What is really
+
+10
+00:00:54,719 --> 00:00:59,460
+interesting about the maps created by Folium is that they are interactive, so
+
+11
+00:00:59,460 --> 00:01:04,280
+you can zoom in and out after the map is rendered, which is a super useful feature.
+
+12
+00:01:04,280 --> 00:01:10,260
+The default map style is the open street map, which shows a street view of an area
+
+13
+00:01:10,260 --> 00:01:14,700
+when you&#39;re zoomed in and shows the borders of the world countries when
+
+14
+00:01:14,700 --> 00:01:20,460
+you&#39;re zoomed all the way out. Now let&#39;s create a world map centred around
+
+15
+00:01:20,460 --> 00:01:25,710
+Canada. To do that, we pass in the latitude and the longitude values of
+
+16
+00:01:25,710 --> 00:01:31,560
+Canada using the location parameter and with Folium you can set the initial zoom
+
+17
+00:01:31,560 --> 00:01:37,200
+level using the zoom start parameter. Now I say initial because you can easily
+
+18
+00:01:37,200 --> 00:01:42,479
+change the zoom level after the map is rendered by zooming in or zooming out.
+
+19
+00:01:42,479 --> 00:01:46,920
+You can play with this parameter to figure out what the initial zoom level
+
+20
+00:01:46,920 --> 00:01:51,840
+looks like for different values. Now, let&#39;s set the zoom level for our map of
+
+21
+00:01:51,840 --> 00:01:58,340
+Canada to 4. And there you go. Here is a world map centred around Canada.
+
+22
+00:01:58,340 --> 00:02:03,479
+Another amazing feature of Folium is that you can create different map styles
+
+23
+00:02:03,479 --> 00:02:09,660
+using the tiles parameter. Let&#39;s create a stamen toner map of Canada. This
+
+24
+00:02:09,660 --> 00:02:13,380
+style is great for visualizing and exploring river meanders
+
+25
+00:02:13,380 --> 00:02:21,240
+and coastal zones. Another style is stamen terrain. Let&#39;s create a map of
+
+26
+00:02:21,240 --> 00:02:26,730
+Canada in stamen terrain. This style is great for visualizing hill shading and
+
+27
+00:02:26,730 --> 00:02:33,240
+natural vegetation colors. And with this we conclude our introduction to Folium.
+
+28
+00:02:33,240 --> 00:02:37,040
+I&#39;ll see you in the next video.
+
