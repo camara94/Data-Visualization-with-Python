@@ -225,3 +225,6 @@ In this lesson you will learn about:
 ![stamen toner](images/stamentoner.png)
 ### Map Styles - Stamen Terrain
 ![stamenterrain](images/stamenterrain.png)
+### Maps with Markers
+### Add a Marker
+![marker](images/maker.png)
