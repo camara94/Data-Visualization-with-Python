@@ -219,3 +219,5 @@ In this lesson you will learn about:
 ![folium](images/folium.png)
 ### Creating a World Map
 ![worldmap](images/worldmap.png)
+### Creating a Map of Canada
+![mapofcanada](images/mapofcanada.png)
