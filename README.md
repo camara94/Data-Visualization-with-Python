@@ -190,3 +190,5 @@ In this lesson you will learn about:
 ![boxplot](images/boxplot2.png)
 ### Scatter Plots
 ![scatter](images/scatter.png)
+### Dataset - Recap
+![data](images/datasetrecap.png)
