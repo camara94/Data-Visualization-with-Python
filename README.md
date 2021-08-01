@@ -235,3 +235,5 @@ In this lesson you will learn about:
 ![geaojson](images/geojson.png)
 ### Creating the Map
 ![map](images/map.png)
+### Dataset - Recap
+![data](images/datasetrecap.png)
