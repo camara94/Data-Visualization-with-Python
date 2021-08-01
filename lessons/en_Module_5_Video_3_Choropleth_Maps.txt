@@ -1,0 +1,48 @@
+In this video, we will learn how to create a special type of map called
+choropleth map with Folium. I'm sure that most of you have seen maps similar to
+this one and this one. These are what we call choropleth maps. So what is a
+choropleth map? A choropleth map is a thematic map in which areas are shaded
+or patterned in proportion to the measurement of the statistical variable
+being displayed on the map, such as population density or per capita income.
+The higher the measurement the darker the color. The map to the left is a
+choropleth map of the world showing infant mortality rate per 1000 births.
+The darker the color the higher the infant mortality rate. According to the
+map, African countries have very high infant mortality rates with some of them
+reporting a rate that is higher than 160 per 1000 births.
+Similarly, the map to the right is a choropleth map of the US showing
+population per square mile by state. Again the darker the color the higher
+the population. According to the map, states in the eastern part of the US
+tend to be more populous than states in the western part, with California being
+an exception. In order to create a choropleth map of a region of interest,
+Folium requires a Geo JSON file that includes geospatial data of the region.
+For a choropleth map of the world, we would need a Geo JSON file that lists
+each country along with any geospatial data to define its borders and
+boundaries. Here is an example of what the Geo JSON file would include about
+each country. The example here pertains to the country Brunei. As you can see, the
+file includes the country's name, it's ID, geometry shape, and the coordinates that
+define the country's borders and boundaries. So let's see how we can
+create a choropleth map of the world like this one showing immigration to
+Canada. Before we go over the code to do that, let's do a
+quick recap of our dataset. Recall that each row represents a country and
+contains metadata about the country such as where it is located geographically
+and whether it is developing or developed. Each row also contains
+numerical figures of annual immigration from that country to Canada from 1980 to
+2013. Now let's process the data and let's add
+an extra column which represents the cumulative sum of annual immigration from
+each country from 1980 to 2013. So for Afghanistan for example,
+it is 58,639, total, and for Albania it is 15,699,
+and so on. And let's name our dataframe df_canada.
+So now that we know how our data is stored in the dataframe,
+df_canada, let's see how we can generate a choropleth map of the
+world showing immigration to Canada. We should be experts now in creating world
+maps with Folium so let's go ahead and create a world map but this time let's
+use the mapbox bright tiles set. The result is a nice world map displaying
+the name of every country. Now to convert this map into a choropleth map, we first
+define a variable that points to our Geo JSON file. Then we apply the choropleth
+function to our world map and we tell it to use the columns "Country" and "Total" in
+our df_canada dataframe, and to use the country names to look up the
+geospatial information about each country in the Geo JSON file. And there
+you have it. A choropleth map of Canada showing the intensity of immigration
+from different countries worldwide. In the lab session, we explore choropleth
+maps in more details, so please make sure to complete this module's lab session. And
+with this, we conclude our video on choropleth maps.

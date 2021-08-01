@@ -1,0 +1,192 @@
+0
+00:00:00,030 --> 00:00:05,370
+In this video, we will learn how to create a special type of map called
+
+1
+00:00:05,370 --> 00:00:11,460
+choropleth map with Folium. I&#39;m sure that most of you have seen maps similar to
+
+2
+00:00:11,460 --> 00:00:17,070
+this one and this one. These are what we call choropleth maps. So what is a
+
+3
+00:00:17,070 --> 00:00:22,920
+choropleth map? A choropleth map is a thematic map in which areas are shaded
+
+4
+00:00:22,920 --> 00:00:27,090
+or patterned in proportion to the measurement of the statistical variable
+
+5
+00:00:27,090 --> 00:00:32,270
+being displayed on the map, such as population density or per capita income.
+
+6
+00:00:32,270 --> 00:00:38,340
+The higher the measurement the darker the color. The map to the left is a
+
+7
+00:00:38,340 --> 00:00:43,910
+choropleth map of the world showing infant mortality rate per 1000 births.
+
+8
+00:00:43,910 --> 00:00:49,710
+The darker the color the higher the infant mortality rate. According to the
+
+9
+00:00:49,710 --> 00:00:54,629
+map, African countries have very high infant mortality rates with some of them
+
+10
+00:00:54,629 --> 00:00:59,059
+reporting a rate that is higher than 160 per 1000 births.
+
+11
+00:00:59,059 --> 00:01:04,320
+Similarly, the map to the right is a choropleth map of the US showing
+
+12
+00:01:04,319 --> 00:01:09,750
+population per square mile by state. Again the darker the color the higher
+
+13
+00:01:09,750 --> 00:01:14,670
+the population. According to the map, states in the eastern part of the US
+
+14
+00:01:14,670 --> 00:01:19,920
+tend to be more populous than states in the western part, with California being
+
+15
+00:01:19,920 --> 00:01:24,830
+an exception. In order to create a choropleth map of a region of interest,
+
+16
+00:01:24,830 --> 00:01:30,750
+Folium requires a Geo JSON file that includes geospatial data of the region.
+
+17
+00:01:30,750 --> 00:01:36,689
+For a choropleth map of the world, we would need a Geo JSON file that lists
+
+18
+00:01:36,689 --> 00:01:42,060
+each country along with any geospatial data to define its borders and
+
+19
+00:01:42,060 --> 00:01:47,369
+boundaries. Here is an example of what the Geo JSON file would include about
+
+20
+00:01:47,369 --> 00:01:54,810
+each country. The example here pertains to the country Brunei. As you can see, the
+
+21
+00:01:54,810 --> 00:02:02,040
+file includes the country&#39;s name, it&#39;s ID, geometry shape, and the coordinates that
+
+22
+00:02:02,040 --> 00:02:06,780
+define the country&#39;s borders and boundaries. So let&#39;s see how we can
+
+23
+00:02:06,780 --> 00:02:11,129
+create a choropleth map of the world like this one showing immigration to
+
+24
+00:02:11,129 --> 00:02:15,800
+Canada. Before we go over the code to do that, let&#39;s do a
+
+25
+00:02:15,800 --> 00:02:21,430
+quick recap of our dataset. Recall that each row represents a country and
+
+26
+00:02:21,430 --> 00:02:26,930
+contains metadata about the country such as where it is located geographically
+
+27
+00:02:26,930 --> 00:02:31,760
+and whether it is developing or developed. Each row also contains
+
+28
+00:02:31,760 --> 00:02:37,640
+numerical figures of annual immigration from that country to Canada from 1980 to
+
+29
+00:02:37,640 --> 00:02:43,580
+2013. Now let&#39;s process the data and let&#39;s add
+
+30
+00:02:43,580 --> 00:02:47,990
+an extra column which represents the cumulative sum of annual immigration from
+
+31
+00:02:47,990 --> 00:02:55,660
+each country from 1980 to 2013. So for Afghanistan for example,
+
+32
+00:02:55,660 --> 00:03:03,760
+it is 58,639, total, and for Albania it is 15,699,
+
+33
+00:03:03,760 --> 00:03:09,660
+and so on. And let&#39;s name our dataframe df_canada.
+
+34
+00:03:09,660 --> 00:03:13,400
+So now that we know how our data is stored in the dataframe,
+
+35
+00:03:13,400 --> 00:03:18,320
+df_canada, let&#39;s see how we can generate a choropleth map of the
+
+36
+00:03:18,320 --> 00:03:23,660
+world showing immigration to Canada. We should be experts now in creating world
+
+37
+00:03:23,660 --> 00:03:28,459
+maps with Folium so let&#39;s go ahead and create a world map but this time let&#39;s
+
+38
+00:03:28,459 --> 00:03:33,650
+use the mapbox bright tiles set. The result is a nice world map displaying
+
+39
+00:03:33,650 --> 00:03:39,290
+the name of every country. Now to convert this map into a choropleth map, we first
+
+40
+00:03:39,290 --> 00:03:44,989
+define a variable that points to our Geo JSON file. Then we apply the choropleth
+
+41
+00:03:44,989 --> 00:03:50,510
+function to our world map and we tell it to use the columns &quot;Country&quot; and &quot;Total&quot; in
+
+42
+00:03:50,510 --> 00:03:56,360
+our df_canada dataframe, and to use the country names to look up the
+
+43
+00:03:56,360 --> 00:04:02,450
+geospatial information about each country in the Geo JSON file. And there
+
+44
+00:04:02,450 --> 00:04:07,130
+you have it. A choropleth map of Canada showing the intensity of immigration
+
+45
+00:04:07,130 --> 00:04:12,350
+from different countries worldwide. In the lab session, we explore choropleth
+
+46
+00:04:12,350 --> 00:04:17,380
+maps in more details, so please make sure to complete this module&#39;s lab session. And
+
+47
+00:04:17,380 --> 00:04:23,230
+with this, we conclude our video on choropleth maps.
+
