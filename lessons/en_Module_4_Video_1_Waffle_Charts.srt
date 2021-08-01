@@ -1,0 +1,64 @@
+0
+00:00:01,120 --> 00:00:07,190
+In this video, we will learn about what some consider an advanced visualization
+
+1
+00:00:07,190 --> 00:00:13,940
+tool, namely the waffle chart. So what is a waffle chart? A waffle chart is a great
+
+2
+00:00:13,940 --> 00:00:19,699
+way to visualize data in relation to a whole or to highlight progress against a
+
+3
+00:00:19,699 --> 00:00:25,369
+given threshold. For example, say immigration from Scandinavia to Canada
+
+4
+00:00:25,369 --> 00:00:31,519
+is comprised only of immigration from Denmark, Norway, and Sweden, and we're
+
+5
+00:00:31,519 --> 00:00:35,750
+interested in visualizing the contribution of each of these countries
+
+6
+00:00:35,750 --> 00:00:41,780
+to the Scandinavian immigration to Canada. The main idea here is for a given
+
+7
+00:00:41,780 --> 00:00:47,150
+waffle chart whose desired height and width are defined, the contribution of
+
+8
+00:00:47,150 --> 00:00:52,070
+each country is transformed into a number of tiles that is proportional to
+
+9
+00:00:52,070 --> 00:00:57,320
+the country's contribution to the total, so that more the contribution the more
+
+10
+00:00:57,320 --> 00:01:03,260
+the tiles, resulting in what resembles a waffle when combined. Hence the name
+
+11
+00:01:03,260 --> 00:01:09,260
+waffle chart. Unfortunately Matplotlib does not have a built-in function to
+
+12
+00:01:09,260 --> 00:01:14,060
+create waffle charts. Therefore, in the lab session, I'll walk you through the
+
+13
+00:01:14,060 --> 00:01:19,220
+process of creating your own Python function to create a waffle chart, so
+
+14
+00:01:19,220 --> 00:01:23,630
+it's really important that you complete this module's lab session. And with this,
+
+15
+00:01:23,630 --> 00:01:30,159
+we conclude our video on waffle charts. I'll see you in the next video.
+
