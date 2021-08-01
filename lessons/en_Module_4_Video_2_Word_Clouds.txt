@@ -1,0 +1,17 @@
+In this video, we will learn about another advanced visualization tool: the
+word cloud. So what is a word cloud? A word cloud is simply a depiction of the
+importance of different words in the body of text. A word cloud works in a
+simple way; the more a specific word appears in a source of textual data the
+bigger and bolder it appears in the world cloud. So given some text data on
+recruitment, for example, we generate a cloud of words like this. This cloud is
+telling us that words such as recruitment, talent, candidates, and so on,
+are the words that really stand out in these text documents. And assuming that
+we didn't know anything about the content of these documents, a word cloud
+can be very useful to assign a topic to some unknown textual data. Unfortunately,
+just like waffle charts, Matplotlib does not have a built-in function to generate
+word clouds. However, luckily a Python library for cloud word generation that
+was created by Andreas Mueller is publicly available. So, in the lab session
+we will learn how to use Mueller's word cloud generator and we will also create
+interesting word clouds superimposed on different background images. So make sure
+to complete this modules lab session. And with this, we conclude our video on word
+clouds. I'll see you in the next video.

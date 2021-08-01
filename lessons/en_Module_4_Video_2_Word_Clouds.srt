@@ -1,0 +1,68 @@
+0
+00:00:00,030 --> 00:00:05,370
+In this video, we will learn about another advanced visualization tool: the
+
+1
+00:00:05,370 --> 00:00:11,580
+word cloud. So what is a word cloud? A word cloud is simply a depiction of the
+
+2
+00:00:11,580 --> 00:00:17,699
+importance of different words in the body of text. A word cloud works in a
+
+3
+00:00:17,699 --> 00:00:23,490
+simple way; the more a specific word appears in a source of textual data the
+
+4
+00:00:23,490 --> 00:00:28,470
+bigger and bolder it appears in the world cloud. So given some text data on
+
+5
+00:00:28,470 --> 00:00:34,140
+recruitment, for example, we generate a cloud of words like this. This cloud is
+
+6
+00:00:34,140 --> 00:00:38,910
+telling us that words such as recruitment, talent, candidates, and so on,
+
+7
+00:00:38,910 --> 00:00:44,309
+are the words that really stand out in these text documents. And assuming that
+
+8
+00:00:44,309 --> 00:00:48,300
+we didn't know anything about the content of these documents, a word cloud
+
+9
+00:00:48,300 --> 00:00:53,989
+can be very useful to assign a topic to some unknown textual data. Unfortunately,
+
+10
+00:00:53,989 --> 00:00:59,550
+just like waffle charts, Matplotlib does not have a built-in function to generate
+
+11
+00:00:59,550 --> 00:01:05,640
+word clouds. However, luckily a Python library for cloud word generation that
+
+12
+00:01:05,640 --> 00:01:10,710
+was created by Andreas Mueller is publicly available. So, in the lab session
+
+13
+00:01:10,710 --> 00:01:15,630
+we will learn how to use Mueller's word cloud generator and we will also create
+
+14
+00:01:15,630 --> 00:01:20,909
+interesting word clouds superimposed on different background images. So make sure
+
+15
+00:01:20,909 --> 00:01:26,220
+to complete this modules lab session. And with this, we conclude our video on word
+
+16
+00:01:26,220 --> 00:01:30,170
+clouds. I'll see you in the next video.
+
