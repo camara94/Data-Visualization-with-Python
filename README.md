@@ -233,3 +233,5 @@ In this lesson you will learn about:
 ### Choropleth Maps
 ### Geojson File
 ![geaojson](images/geojson.png)
+### Creating the Map
+![map](images/map.png)
