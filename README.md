@@ -182,4 +182,5 @@ In this lesson you will learn about:
 [https://www.surveygizmo.com/survey-blog/pie-chart-or-bar-graph](https://www.surveygizmo.com/survey-blog/pie-chart-or-bar-graph/)
 ### Box Plots
 ![boxplot](images/boxplot.png)
-
+### Dataset - Recap
+![data](images/datasetrecap.png)
