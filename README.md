@@ -205,3 +205,5 @@ In this lesson you will learn about:
 ![waffle](images/wafflecharts.png)
 ### Word Clouds
 ![wordcloud](images/wordclouds.png)
+### Seaborn and Regression Plots
+![seaborn](images/seaborn.png)
