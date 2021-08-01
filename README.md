@@ -230,3 +230,6 @@ In this lesson you will learn about:
 ![marker](images/maker.png)
 ### Label the Marker
 ![makerpup](images/makerpup.png)
+### Choropleth Maps
+### Geojson File
+![geaojson](images/geojson.png)
