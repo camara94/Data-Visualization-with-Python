@@ -203,3 +203,5 @@ In this lesson you will learn about:
 * Seaborn, and how to use it to generate attractive regression plots.
 ### Waffle Charts
 ![waffle](images/wafflecharts.png)
+### Word Clouds
+![wordcloud](images/wordclouds.png)
