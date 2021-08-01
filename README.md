@@ -221,3 +221,5 @@ In this lesson you will learn about:
 ![worldmap](images/worldmap.png)
 ### Creating a Map of Canada
 ![mapofcanada](images/mapofcanada.png)
+### Map Styles - Stamen Toner
+![stamen toner](images/stamentoner.png)
