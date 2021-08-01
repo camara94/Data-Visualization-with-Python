@@ -194,3 +194,5 @@ In this lesson you will learn about:
 ![data](images/datasetrecap.png)
 ### Dataset - Processed
 ![dataset](images/dataprocessed.png)
+### Scatter Plots
+![scatter plots](images/scatterplot.png)
